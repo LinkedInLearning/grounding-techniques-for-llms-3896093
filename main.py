@@ -1,4 +1,3 @@
-import os
 import anthropic
 import openai
 anthropic_client = anthropic.Anthropic()
