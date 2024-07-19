@@ -18,6 +18,7 @@ def prompt_template(r):
     prompt = f"""classify the following review into positive or negative.
 review: It doesn't show anywhere (that I could see) that this is only one canvas. Very misleading description. I wish I had read all the reviews before ordering! class: negative###
 review: The package contained just one stretched canvas and not 6 as the description claims. I had to return this order as Amazon cannot replace it for some reasons. class: negative###
+review: I really enjoy these scissors for my inspiration books that I am making (like collage, but in books) and using these different textures these give is just wonderful, makes a great statement with the pictures and sayings. Want more, perfect for any need you have even for gifts as well. Pretty cool! class: positive###
 review: {r} class:"""
     return prompt
 
