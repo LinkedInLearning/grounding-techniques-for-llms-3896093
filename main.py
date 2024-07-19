@@ -1,19 +1,7 @@
-import anthropic
 import openai
-anthropic_client = anthropic.Anthropic()
 openai_client = openai.OpenAI()
 
-def call_anthropic(prompt, model="claude-3-5-sonnet-20240620"):
-  message = anthropic_client.messages.create(
-      model=model,
-      max_tokens=1024,
-      messages=[
-          {"role": "user", "content": prompt},
-      ],
-  )
-  return message.content[0].text
-
-def call_openai(prompt, model="gpt-3.5-turbo"):
+def call_openai(prompt, model="gpt-4o-mini"):
   chat_completion = openai_client.chat.completions.create(
       messages=[
           {
@@ -25,8 +13,36 @@ def call_openai(prompt, model="gpt-3.5-turbo"):
   )
   return chat_completion.choices[0].message.content
 
-question = "how many As are there in the word Blueberry?"
+def prompt_template(r):
+    # add prompt here
+    prompt = f""""""
+    return prompt
 
-a1, a2 = call_anthropic(question), call_openai(question)
-print("Claude Sonnet 3.5:\n", a1)
-print("GPT 3.5:\n", a2)
+# ratings and classifications based on datasets from https://snap.stanford.edu/data/web-Amazon-links.html
+def load_reviews():
+    with open("ecommerce_reviews.txt") as f:
+        reviews = f.readlines()
+        return reviews
+
+def load_classification():
+    with open("ratings.txt") as f:
+        classifications = f.read().splitlines()
+        return classifications
+    
+
+def calculate_accuracy(list1, list2):
+	return sum([1 for i in range(len(list1)) if list1[i] == list2[i]]) / len(list1)
+
+def predict_review_sentiment():
+    reviews = load_reviews()
+    classification = load_classification()
+    results = []
+    for r in reviews:
+        prompt = prompt_template(r)
+        r = call_openai(prompt)
+        results.append(r)
+
+    accuracy = calculate_accuracy(classification,results)
+    print("Accuracy:", accuracy)
+
+predict_review_sentiment()
