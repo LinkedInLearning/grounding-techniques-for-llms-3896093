@@ -15,7 +15,10 @@ def call_openai(prompt, model="gpt-4o-mini"):
 
 def prompt_template(r):
     # add prompt here
-    prompt = f""""""
+    prompt = f"""classify the following review into positive or negative.
+review: It doesn't show anywhere (that I could see) that this is only one canvas. Very misleading description. I wish I had read all the reviews before ordering! class: negative###
+review: The package contained just one stretched canvas and not 6 as the description claims. I had to return this order as Amazon cannot replace it for some reasons. class: negative###
+review: {r} class:"""
     return prompt
 
 # ratings and classifications based on datasets from https://snap.stanford.edu/data/web-Amazon-links.html
