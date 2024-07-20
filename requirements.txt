@@ -1,5 +1,5 @@
-transformers==4.42.0
-datasets==2.20.0
-anthropic==0.31.1
-openai==1.35.14
-pandas==2.2.2
+evaluate==0.4.2
+rouge_score==0.1.2
+transformers==4.42.4
+torch==2.3.1 --extra-index-url https://download.pytorch.org/whl/cpu
+bert-score==0.3.13
