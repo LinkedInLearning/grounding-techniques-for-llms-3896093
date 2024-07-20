@@ -1,0 +1,2527 @@
+{
+  "version": {
+    "_version": 9.03,
+    "autoSaveFromRestore": false,
+    "canvasTemplates": [
+      {
+        "id": "sg9zy34i0",
+        "name": "Basic Conversation Path",
+        "color": "#5b9fd7",
+        "nodeIDs": [
+          "643872d482cf9d2273b905df",
+          "643872d482cf9d2273b905e1",
+          "643872d482cf9d2273b905e3"
+        ]
+      },
+      {
+        "id": "5bgq3341p",
+        "name": "Save Information",
+        "color": "#000000",
+        "nodeIDs": [
+          "6438784f82cf9d2273b90dd4",
+          "6438784f82cf9d2273b90dd6",
+          "6438784f82cf9d2273b90dd8",
+          "6438784f82cf9d2273b90dda"
+        ]
+      },
+      {
+        "id": "byav33785",
+        "name": "API Call Example",
+        "color": null,
+        "nodeIDs": [
+          "645d718f83103cca7a3cecc1",
+          "645d718f83103cca7a3cecc3",
+          "645d718f83103cca7a3cecc5",
+          "645d718f83103cca7a3cecc7"
+        ]
+      }
+    ],
+    "components": [],
+    "creatorID": 70616,
+    "manualSave": false,
+    "name": "Initial Version",
+    "platformData": {
+      "slots": [],
+      "intents": [
+        {
+          "key": "6579c6bf984565862f64b783",
+          "name": "Yes",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "sure",
+              "slots": []
+            },
+            {
+              "text": "certainly",
+              "slots": []
+            },
+            {
+              "text": "affirmative",
+              "slots": []
+            },
+            {
+              "text": "okay",
+              "slots": []
+            },
+            {
+              "text": "ok",
+              "slots": []
+            },
+            {
+              "text": "ya",
+              "slots": []
+            },
+            {
+              "text": "yep",
+              "slots": []
+            },
+            {
+              "text": "yup",
+              "slots": []
+            },
+            {
+              "text": "yea",
+              "slots": []
+            },
+            {
+              "text": "yes",
+              "slots": []
+            }
+          ],
+          "noteID": "gfo0q0w4g",
+          "description": "Trigger this intent when the user responds affirmatively or agrees to a question or statement using words like \"yes\", \"yea\", \"yup\", \"yep\", \"ya\", \"ok\", \"okay\", \"affirmative\", \"certainly\", or \"sure\"."
+        },
+        {
+          "key": "6579c778dd3cca0fe0e0b152",
+          "name": "No",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "negative",
+              "slots": []
+            },
+            {
+              "text": "nevermind",
+              "slots": []
+            },
+            {
+              "text": "not",
+              "slots": []
+            },
+            {
+              "text": "no thanks",
+              "slots": []
+            },
+            {
+              "text": "no way",
+              "slots": []
+            },
+            {
+              "text": "not now",
+              "slots": []
+            },
+            {
+              "text": "nah",
+              "slots": []
+            },
+            {
+              "text": "nay",
+              "slots": []
+            },
+            {
+              "text": "nope",
+              "slots": []
+            },
+            {
+              "text": "no",
+              "slots": []
+            }
+          ],
+          "noteID": "gfo0r0wpi",
+          "description": "Trigger this intent when the user responds negatively or declines something, using words like \"no\", \"nope\", \"nay\", \"nah\", \"not now\", \"no way\", \"no thanks\", \"not\", \"nevermind\", or \"negative\"."
+        },
+        {
+          "key": "None",
+          "name": "None",
+          "slots": [],
+          "inputs": [],
+          "noteID": null
+        }
+      ],
+      "settings": {
+        "restart": true,
+        "repeat": 100,
+        "locales": [
+          "en-US"
+        ],
+        "defaultVoice": "Alexa"
+      },
+      "publishing": {
+        "avatar": "https://cdn.voiceflow.com/assets/logomark.png",
+        "color": "#2E7FF1",
+        "description": "Our virtual agent is here to help you.",
+        "feedback": false,
+        "image": "https://cdn.voiceflow.com/assets/logomark.png",
+        "persistence": "localStorage",
+        "position": "right",
+        "spacing": {
+          "side": 24,
+          "bottom": 24
+        },
+        "title": "Starting Template - Webchat",
+        "watermark": true
+      },
+      "platform": "webchat"
+    },
+    "prototype": {
+      "type": "chat",
+      "data": {
+        "name": "04_02",
+        "locales": [
+          "en-US"
+        ]
+      },
+      "model": {
+        "intents": [],
+        "slots": []
+      },
+      "context": {
+        "stack": [
+          {
+            "programID": "64386e21bb106b044ea34b78",
+            "storage": {},
+            "variables": {},
+            "diagramID": "64386e21bb106b044ea34b78"
+          }
+        ],
+        "variables": {}
+      },
+      "surveyorContext": {
+        "functionDefinitions": {},
+        "slotsMap": {},
+        "platform": "webchat",
+        "products": {},
+        "extraSlots": [],
+        "interfaces": [],
+        "permissions": [],
+        "extraIntents": [],
+        "usedEventsSet": [],
+        "usedIntentsSet": [],
+        "goToIntentsSet": [],
+        "cmsVariables": {
+          "sessions": {
+            "isSystem": true,
+            "defaultValue": null
+          },
+          "user_id": {
+            "isSystem": true,
+            "defaultValue": null
+          },
+          "timestamp": {
+            "isSystem": true,
+            "defaultValue": null
+          },
+          "platform": {
+            "isSystem": true,
+            "defaultValue": null
+          },
+          "intent_confidence": {
+            "isSystem": true,
+            "defaultValue": null
+          },
+          "last_response": {
+            "isSystem": true,
+            "defaultValue": null
+          },
+          "last_event": {
+            "isSystem": true,
+            "defaultValue": null
+          },
+          "last_utterance": {
+            "isSystem": true,
+            "defaultValue": null
+          },
+          "vf_memory": {
+            "isSystem": true,
+            "defaultValue": null
+          },
+          "answer": {
+            "isSystem": false,
+            "defaultValue": null,
+            "datatype": "any",
+            "isArray": false
+          },
+          "critic_response": {
+            "isSystem": false,
+            "defaultValue": null,
+            "datatype": "any",
+            "isArray": false
+          },
+          "question": {
+            "isSystem": false,
+            "defaultValue": null,
+            "datatype": "any",
+            "isArray": false
+          }
+        }
+      },
+      "settings": {},
+      "platform": "webchat"
+    },
+    "topics": [
+      {
+        "type": "DIAGRAM",
+        "sourceID": "64386e21bb106b044ea34b78"
+      }
+    ],
+    "variables": [
+      "sessions",
+      "user_id",
+      "timestamp",
+      "platform",
+      "intent_confidence",
+      "last_response",
+      "last_event",
+      "last_utterance",
+      "vf_memory",
+      "answer",
+      "critic_response",
+      "question"
+    ],
+    "_id": "669c13ac7b19f6aa387d6c95",
+    "updatedAt": "2024-07-20T20:00:50.848Z",
+    "domains": [
+      {
+        "id": "cla06iyr900b206pkh8d4ap8n",
+        "name": "Home",
+        "live": true,
+        "topicIDs": [
+          "64386e21bb106b044ea34b78"
+        ],
+        "rootDiagramID": "64386e21bb106b044ea34b78",
+        "updatedBy": 70616,
+        "updatedAt": "2024-07-20T19:44:44.475Z"
+      }
+    ],
+    "projectID": "669c13ac7b19f6aa387d6c94",
+    "rootDiagramID": "64386e21bb106b044ea34b78",
+    "templateDiagramID": "643872531e80120007759e05"
+  },
+  "diagrams": {
+    "643872531e80120007759e05": {
+      "name": "Template Diagram",
+      "type": "TEMPLATE",
+      "zoom": 100,
+      "nodes": {
+        "643872d482cf9d2273b905df": {
+          "type": "block",
+          "data": {
+            "name": "Option 2",
+            "color": "",
+            "steps": [
+              "643872d482cf9d2273b905e5"
+            ]
+          },
+          "nodeID": "643872d482cf9d2273b905df",
+          "coords": [
+            -432.02299332274276,
+            -334.73425308247994
+          ]
+        },
+        "643872d482cf9d2273b905e5": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "lu9tb340d",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Second Option"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "643872d482cf9d2273b905e6"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "643872d482cf9d2273b905e5"
+        },
+        "643872d482cf9d2273b905e1": {
+          "type": "block",
+          "data": {
+            "name": "Start Block",
+            "color": "#5b9fd7",
+            "steps": [
+              "643872d482cf9d2273b905e8",
+              "643872d482cf9d2273b905eb"
+            ]
+          },
+          "nodeID": "643872d482cf9d2273b905e1",
+          "coords": [
+            -845.4801744371416,
+            -539.5792694267975
+          ]
+        },
+        "643872d482cf9d2273b905e8": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "929q734a2",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "How can I help you?"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "643872d482cf9d2273b905eb",
+                  "id": "643872d482cf9d2273b905e9"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "643872d482cf9d2273b905e8"
+        },
+        "643872d482cf9d2273b905eb": {
+          "type": "buttons",
+          "data": {
+            "name": "Buttons",
+            "noMatch": null,
+            "buttons": [
+              {
+                "id": "xr9vd34tj",
+                "name": "Path 1",
+                "actions": []
+              },
+              {
+                "id": "cl9vs34c7",
+                "name": "Path 2",
+                "actions": []
+              }
+            ],
+            "noReply": null,
+            "intentScope": "GLOBAL",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "else": {
+                  "type": "else",
+                  "target": null,
+                  "id": "643872d482cf9d2273b905ec"
+                }
+              },
+              "dynamic": [
+                {
+                  "type": "",
+                  "target": "643872d482cf9d2273b905e3",
+                  "id": "643872d482cf9d2273b905ed",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -679.4801667002234,
+                          -399.32923837159325
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -637.4918741411055,
+                          -399.32923837159325
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -637.4918741411055,
+                          -542.9755028741506
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -595.5035815819875,
+                          -542.9755028741506
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "",
+                  "target": "643872d482cf9d2273b905df",
+                  "id": "643872d482cf9d2273b905ee",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -679.4801667002234,
+                          -344.82921901334083
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -638.2515780028617,
+                          -344.82921901334083
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -638.2515780028617,
+                          -307.73401942975823
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -597.0229893055001,
+                          -307.73401942975823
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          "nodeID": "643872d482cf9d2273b905eb"
+        },
+        "643872d482cf9d2273b905e3": {
+          "type": "block",
+          "data": {
+            "name": "Option 1",
+            "color": "",
+            "steps": [
+              "643872d482cf9d2273b905f0"
+            ]
+          },
+          "nodeID": "643872d482cf9d2273b905e3",
+          "coords": [
+            -430.5038187460724,
+            -569.9756266907931
+          ]
+        },
+        "643872d482cf9d2273b905f0": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "ky9ry343w",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "First Option"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "643872d482cf9d2273b905f1"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "643872d482cf9d2273b905f0"
+        },
+        "6438784f82cf9d2273b90dd4": {
+          "type": "block",
+          "data": {
+            "name": "Use Logic to Route",
+            "color": "#dc8879",
+            "steps": [
+              "6438784f82cf9d2273b90ddc"
+            ]
+          },
+          "nodeID": "6438784f82cf9d2273b90dd4",
+          "coords": [
+            -1964.4846386537488,
+            -626.9744457114995
+          ]
+        },
+        "6438784f82cf9d2273b90ddc": {
+          "type": "ifV2",
+          "data": {
+            "name": "If",
+            "expressions": [
+              {
+                "type": null,
+                "name": "If name is elon musk",
+                "value": [
+                  {
+                    "logicInterface": "variable",
+                    "type": "equals",
+                    "value": [
+                      {
+                        "type": "variable",
+                        "value": "name"
+                      },
+                      {
+                        "type": "value",
+                        "value": "elon musk"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "noMatch": {
+              "type": "path",
+              "pathName": "All other names"
+            },
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "else": {
+                  "type": "else",
+                  "target": "6438784f82cf9d2273b90dd8",
+                  "id": "6438784f82cf9d2273b90ddd",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -1798.484505972181,
+                          -492.72447921623757
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -1763.5243607307511,
+                          -492.72447921623757
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -1763.5243607307511,
+                          -440.2937029472216
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -1728.5642154893217,
+                          -440.2937029472216
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": [
+                {
+                  "type": "",
+                  "target": "6438784f82cf9d2273b90dda",
+                  "id": "6438784f82cf9d2273b90dde",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -1798.484505972181,
+                          -547.2244999131336
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -1764.1493300508728,
+                          -547.2244999131336
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -1764.1493300508728,
+                          -599.0438504799286
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -1729.814154129565,
+                          -599.0438504799286
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": true
+                      }
+                    ],
+                    "event": {
+                      "type": "If name is elon musk"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "nodeID": "6438784f82cf9d2273b90ddc"
+        },
+        "6438784f82cf9d2273b90dd6": {
+          "type": "block",
+          "data": {
+            "name": "Capture Information",
+            "color": "#dc8879",
+            "steps": [
+              "6438784f82cf9d2273b90de0",
+              "6438784f82cf9d2273b90de3"
+            ]
+          },
+          "nodeID": "6438784f82cf9d2273b90dd6",
+          "coords": [
+            -2376.095116200327,
+            -628.3840706346044
+          ]
+        },
+        "6438784f82cf9d2273b90de0": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "s8a30349g",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "What is your name?"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "6438784f82cf9d2273b90de3",
+                  "id": "6438784f82cf9d2273b90de1"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "6438784f82cf9d2273b90de0"
+        },
+        "6438784f82cf9d2273b90de3": {
+          "type": "captureV2",
+          "data": {
+            "name": "Capture",
+            "intentScope": "GLOBAL",
+            "capture": {
+              "type": "query",
+              "variable": "name"
+            },
+            "noReply": null,
+            "noMatch": null,
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "6438784f82cf9d2273b90dd4",
+                  "id": "6438784f82cf9d2273b90de4",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -2210.0950799471193,
+                          -488.1341077200336
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -2169.789872823509,
+                          -488.1341077200336
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -2169.789872823509,
+                          -599.9743336839742
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -2129.484665699899,
+                          -599.9743336839742
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                },
+                "else": {
+                  "type": "else",
+                  "target": null,
+                  "id": "6438784f82cf9d2273b90de5"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "6438784f82cf9d2273b90de3"
+        },
+        "6438784f82cf9d2273b90dd8": {
+          "type": "block",
+          "data": {
+            "name": "Other names",
+            "color": "#dc8879",
+            "steps": [
+              "6438784f82cf9d2273b90de7"
+            ]
+          },
+          "nodeID": "6438784f82cf9d2273b90dd8",
+          "coords": [
+            -1563.5642881833433,
+            -467.2936955577087
+          ]
+        },
+        "6438784f82cf9d2273b90de7": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "1jabe34gf",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Hello "
+                      },
+                      {
+                        "id": "name",
+                        "name": "name",
+                        "isSlot": false,
+                        "type": "variable",
+                        "children": [
+                          {
+                            "text": ""
+                          }
+                        ]
+                      },
+                      {
+                        "text": " !"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "6438784f82cf9d2273b90de8"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "6438784f82cf9d2273b90de7"
+        },
+        "6438784f82cf9d2273b90dda": {
+          "type": "block",
+          "data": {
+            "name": "Elon Musk",
+            "color": "#dc8879",
+            "steps": [
+              "6438784f82cf9d2273b90dea"
+            ]
+          },
+          "nodeID": "6438784f82cf9d2273b90dda",
+          "coords": [
+            -1564.8142881833433,
+            -626.0436955577089
+          ]
+        },
+        "6438784f82cf9d2273b90dea": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "1jabe34gf",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Twitter is the best 🐦"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "6438784f82cf9d2273b90deb"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "6438784f82cf9d2273b90dea"
+        },
+        "645d718f83103cca7a3cecc1": {
+          "type": "block",
+          "data": {
+            "name": "Fail",
+            "color": "#5b9fd7",
+            "steps": [
+              "645d718f83103cca7a3cecc9"
+            ]
+          },
+          "nodeID": "645d718f83103cca7a3cecc1",
+          "coords": [
+            -943.7641060825457,
+            -726.7018427371622
+          ]
+        },
+        "645d718f83103cca7a3cecc9": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "u08yz372g",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Error"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "645d718f83103cca7a3cecca"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "645d718f83103cca7a3cecc9"
+        },
+        "645d718f83103cca7a3cecc3": {
+          "type": "block",
+          "data": {
+            "name": "API Call",
+            "color": "#5b9fd7",
+            "steps": [
+              "645d718f83103cca7a3ceccc"
+            ]
+          },
+          "nodeID": "645d718f83103cca7a3cecc3",
+          "coords": [
+            -1337.282813902139,
+            -902.1537022731807
+          ]
+        },
+        "645d718f83103cca7a3ceccc": {
+          "type": "api",
+          "data": {
+            "name": "",
+            "url": "https://api.openai.com/v1/completions",
+            "body": [
+              {
+                "key": "",
+                "val": ""
+              }
+            ],
+            "params": [],
+            "method": "POST",
+            "headers": [
+              {
+                "key": "Content-Type",
+                "val": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "val": "Bearer <ADD API KEY HERE>"
+              }
+            ],
+            "content": "{\n  \"model\": \"text-davinci-003\",\n  \"prompt\": \"{last_utterance}\",\n  \"max_tokens\": 7,\n  \"temperature\": 0,\n  \"top_p\": 1,\n  \"n\": 1,\n  \"stream\": false,\n  \"logprobs\": null,\n  \"stop\": \"\\n\"\n}",
+            "mappings": [
+              {
+                "path": "response",
+                "var": "response"
+              }
+            ],
+            "bodyType": "rawInput",
+            "selectedAction": "Make a POST Request",
+            "selectedIntegration": "Custom API",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "645d718f83103cca7a3cecd7",
+                  "id": "645d718f83103cca7a3cecce",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -1171.2838307947716,
+                          -748.4052156062919
+                        ]
+                      },
+                      {
+                        "point": [
+                          -1141.0638307947715,
+                          -748.4052156062919
+                        ]
+                      },
+                      {
+                        "point": [
+                          -1141.0638307947715,
+                          -821.3652156062917
+                        ]
+                      },
+                      {
+                        "point": [
+                          -1110.8438307947717,
+                          -821.3652156062917
+                        ],
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                },
+                "fail": {
+                  "type": "fail",
+                  "target": "645d718f83103cca7a3cecc9",
+                  "id": "645d718f83103cca7a3ceccd",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -1171.2838307947716,
+                          -693.9052156062919
+                        ]
+                      },
+                      {
+                        "point": [
+                          -1140.5238307947716,
+                          -693.9052156062919
+                        ]
+                      },
+                      {
+                        "point": [
+                          -1140.5238307947716,
+                          -647.2052156062919
+                        ]
+                      },
+                      {
+                        "point": [
+                          -1109.7638307947714,
+                          -647.2052156062919
+                        ],
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "645d718f83103cca7a3ceccc"
+        },
+        "645d718f83103cca7a3cecc5": {
+          "type": "block",
+          "data": {
+            "name": "Welcome",
+            "color": "#5b9fd7",
+            "steps": [
+              "645d718f83103cca7a3cecd0",
+              "645d718f83103cca7a3cecd3"
+            ]
+          },
+          "nodeID": "645d718f83103cca7a3cecc5",
+          "coords": [
+            -1722.1832079861151,
+            -907.6478276212674
+          ]
+        },
+        "645d718f83103cca7a3cecd0": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "xg77r3eyi",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "This flow captures a users question and sends it to the OpenAI API"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "645d718f83103cca7a3cecd3",
+                  "id": "645d718f83103cca7a3cecd1"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "645d718f83103cca7a3cecd0"
+        },
+        "645d718f83103cca7a3cecd3": {
+          "type": "captureV2",
+          "data": {
+            "name": "Capture",
+            "intentScope": "GLOBAL",
+            "capture": {
+              "type": "query",
+              "variable": "last_utterance"
+            },
+            "noReply": null,
+            "noMatch": null,
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "645d718f83103cca7a3cecc3",
+                  "id": "645d718f83103cca7a3cecd4",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -1556.1838307947714,
+                          -733.6452156062919
+                        ]
+                      },
+                      {
+                        "point": [
+                          -1529.2338307947716,
+                          -733.6452156062919
+                        ]
+                      },
+                      {
+                        "point": [
+                          -1529.2338307947716,
+                          -875.1552156062919
+                        ]
+                      },
+                      {
+                        "point": [
+                          -1502.2838307947716,
+                          -875.1552156062919
+                        ],
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                },
+                "else": {
+                  "type": "else",
+                  "target": null,
+                  "id": "645d718f83103cca7a3cecd5"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "645d718f83103cca7a3cecd3"
+        },
+        "645d718f83103cca7a3cecc7": {
+          "type": "block",
+          "data": {
+            "name": "Success",
+            "color": "#5b9fd7",
+            "steps": [
+              "645d718f83103cca7a3cecd7"
+            ]
+          },
+          "nodeID": "645d718f83103cca7a3cecc7",
+          "coords": [
+            -944.844860096504,
+            -900.8660415973322
+          ]
+        },
+        "645d718f83103cca7a3cecd7": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "vh8xb37hw",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": ""
+                      },
+                      {
+                        "id": "response",
+                        "name": "response",
+                        "isSlot": false,
+                        "type": "variable",
+                        "children": [
+                          {
+                            "text": ""
+                          }
+                        ]
+                      },
+                      {
+                        "text": " "
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "645d718f83103cca7a3cecd8"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "645d718f83103cca7a3cecd7"
+        }
+      },
+      "offsetX": 0,
+      "offsetY": 0,
+      "modified": 1681420883,
+      "creatorID": 70616,
+      "variables": [],
+      "menuItems": [],
+      "_id": "669c13ac7b19f6aa387d6c96",
+      "diagramID": "643872531e80120007759e05",
+      "versionID": "669c13ac7b19f6aa387d6c95"
+    },
+    "64386e21bb106b044ea34b78": {
+      "name": "ROOT",
+      "type": "TOPIC",
+      "zoom": 100,
+      "nodes": {
+        "start00000000000000000000": {
+          "type": "start",
+          "data": {
+            "name": "Start",
+            "color": "#56b365",
+            "steps": [],
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "669c13bd09c951da370c5ae7",
+                  "id": "6032afcf359e8c14c06c0319",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -60.83,
+                          -704.69
+                        ]
+                      },
+                      {
+                        "point": [
+                          -8.9,
+                          -707.28
+                        ]
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            },
+            "label": "Start"
+          },
+          "nodeID": "start00000000000000000000",
+          "coords": [
+            -125.47306657576806,
+            -726.6861503347151
+          ]
+        },
+        "669c13bd09c951da370c5ae5": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "0cqg3hhz",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "How can I help you?"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "669c13bd09c951da370c5ae6",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          322.1,
+                          -655.28
+                        ]
+                      },
+                      {
+                        "point": [
+                          346.1,
+                          -655.28
+                        ]
+                      },
+                      {
+                        "point": [
+                          346.1,
+                          -680.85
+                        ]
+                      },
+                      {
+                        "point": [
+                          338.4,
+                          -680.85
+                        ]
+                      },
+                      {
+                        "point": [
+                          338.4,
+                          -706.42
+                        ]
+                      },
+                      {
+                        "point": [
+                          362.4,
+                          -706.42
+                        ],
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "669c13bd09c951da370c5ae5"
+        },
+        "669c13bd09c951da370c5ae7": {
+          "type": "block",
+          "data": {
+            "name": "Question",
+            "steps": [
+              "669c13bd09c951da370c5ae5",
+              "669c13cf09c951da370c5aee"
+            ],
+            "color": ""
+          },
+          "nodeID": "669c13bd09c951da370c5ae7",
+          "coords": [
+            156.10394310338225,
+            -734.2758569871417
+          ]
+        },
+        "669c13cf09c951da370c5aee": {
+          "type": "captureV2",
+          "data": {
+            "name": "Capture",
+            "intentScope": "GLOBAL",
+            "capture": {
+              "type": "query",
+              "variable": "669c16147b19f6aa387d6d5f"
+            },
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "669c13db09c951da370c5b00",
+                  "id": "669c13cf09c951da370c5aef",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          322.1,
+                          -586.28
+                        ]
+                      },
+                      {
+                        "point": [
+                          346.12,
+                          -586.28
+                        ]
+                      },
+                      {
+                        "point": [
+                          346.12,
+                          -708.99
+                        ]
+                      },
+                      {
+                        "point": [
+                          370.13,
+                          -708.99
+                        ],
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                },
+                "else": {
+                  "type": "else",
+                  "target": null,
+                  "id": "669c13cf09c951da370c5af0"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "669c13cf09c951da370c5aee",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "669c13db09c951da370c5b00": {
+          "type": "block",
+          "data": {
+            "name": "Answer",
+            "steps": [
+              "669c160709c951da370c5b21"
+            ],
+            "color": ""
+          },
+          "nodeID": "669c13db09c951da370c5b00",
+          "coords": [
+            535.132671841054,
+            -735.994808137879
+          ]
+        },
+        "669c159009c951da370c5b0a": {
+          "type": "block",
+          "data": {
+            "name": "Critic",
+            "steps": [
+              "669c15a409c951da370c5b1c",
+              "669c169f09c951da370c5b28"
+            ],
+            "color": "#5b9fd7"
+          },
+          "nodeID": "669c159009c951da370c5b0a",
+          "coords": [
+            910.7041878064275,
+            -738.7881037578283
+          ]
+        },
+        "669c15a409c951da370c5b1c": {
+          "type": "ai_set",
+          "data": {
+            "name": "AI Set",
+            "label": "Critic prompt",
+            "sets": [
+              {
+                "mode": "prompt",
+                "prompt": "Rate if the answer to the question is true or false. Provide an explanation.\n\nq: What is the clearence of London Bridge? a: 8.9m c: True. Based on the wikipedia article from 2024. ###\nq: What is the wavelength of visible light? a: 400-700nm c: True. Another acceptable answer is 750-420 terahertz.###\nq: How many continents are there? a: 10 c: False. By convention there are between 4-7 continents, not 10. ###\nq: {{[question].669c16147b19f6aa387d6d5f}} a: {{[answer].669c16467b19f6aa387d6d68}} c:",
+                "variable": "669c16987b19f6aa387d6d80"
+              }
+            ],
+            "system": "",
+            "maxTokens": 128,
+            "overrideParams": false,
+            "model": "gpt-3.5-turbo",
+            "temperature": 0.7,
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "669c15a409c951da370c5b1d"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "669c15a409c951da370c5b1c"
+        },
+        "669c160709c951da370c5b21": {
+          "type": "ai_set",
+          "data": {
+            "name": "AI Set",
+            "label": "Generate answer",
+            "sets": [
+              {
+                "mode": "prompt",
+                "prompt": "Answer the following question: {{[question].669c16147b19f6aa387d6d5f}}",
+                "variable": "669c16467b19f6aa387d6d68"
+              }
+            ],
+            "system": "",
+            "maxTokens": 128,
+            "overrideParams": false,
+            "model": "gpt-4o",
+            "temperature": 0.7,
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "669c159009c951da370c5b0a",
+                  "id": "669c160709c951da370c5b22",
+                  "data": {}
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "669c160709c951da370c5b21"
+        },
+        "669c169f09c951da370c5b28": {
+          "type": "ifV2",
+          "data": {
+            "name": "If",
+            "expressions": [
+              {
+                "type": "or",
+                "name": "",
+                "value": [
+                  {
+                    "logicInterface": "variable",
+                    "type": "contains",
+                    "value": [
+                      {
+                        "type": "variable",
+                        "value": "669c16987b19f6aa387d6d80"
+                      },
+                      {
+                        "type": "value",
+                        "value": "true"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "lv1pq3hpe",
+                    "logicInterface": "logic_group",
+                    "type": null,
+                    "value": [
+                      {
+                        "logicInterface": "variable",
+                        "type": "contains",
+                        "value": [
+                          {
+                            "type": "variable",
+                            "value": "669c16987b19f6aa387d6d80"
+                          },
+                          {
+                            "type": "value",
+                            "value": "True"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "noMatch": {
+              "type": "path",
+              "pathName": "Else"
+            },
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "else": {
+                  "id": "669c171009c951da370c5b38",
+                  "type": "else",
+                  "target": "669c171309c951da370c5b3a",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1076.7,
+                          -507.04
+                        ]
+                      },
+                      {
+                        "point": [
+                          1116.91,
+                          -507.04
+                        ]
+                      },
+                      {
+                        "point": [
+                          1116.91,
+                          -659.99
+                        ]
+                      },
+                      {
+                        "point": [
+                          1157.11,
+                          -659.99
+                        ],
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": [
+                {
+                  "type": "",
+                  "target": "669c16d509c951da370c5b2e",
+                  "id": "669c169f09c951da370c5b29",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          744.7,
+                          -580.29
+                        ],
+                        "reversed": true
+                      },
+                      {
+                        "point": [
+                          561.15,
+                          -580.29
+                        ]
+                      },
+                      {
+                        "point": [
+                          561.15,
+                          -190.66
+                        ]
+                      },
+                      {
+                        "point": [
+                          377.6,
+                          -190.66
+                        ],
+                        "reversed": true,
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          "nodeID": "669c169f09c951da370c5b28"
+        },
+        "669c16d509c951da370c5b2e": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "6b1s53hc0",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": ""
+                      },
+                      {
+                        "id": "669c16467b19f6aa387d6d68",
+                        "name": "answer",
+                        "isSlot": false,
+                        "type": "variable",
+                        "children": [
+                          {
+                            "text": ""
+                          }
+                        ]
+                      },
+                      {
+                        "text": " "
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "669c13bd09c951da370c5ae7",
+                  "id": "669c16d509c951da370c5b2f",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          45.6,
+                          -190.66
+                        ],
+                        "reversed": true
+                      },
+                      {
+                        "point": [
+                          -32.9,
+                          -190.66
+                        ]
+                      },
+                      {
+                        "point": [
+                          -32.9,
+                          -707.28
+                        ]
+                      },
+                      {
+                        "point": [
+                          -8.9,
+                          -707.28
+                        ],
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "669c16d509c951da370c5b2e"
+        },
+        "669c16d509c951da370c5b30": {
+          "type": "block",
+          "data": {
+            "name": "Correct answer",
+            "steps": [
+              "669c16d509c951da370c5b2e"
+            ],
+            "color": "#56b365"
+          },
+          "nodeID": "669c16d509c951da370c5b30",
+          "coords": [
+            211.6011210022699,
+            -269.66458143000835
+          ]
+        },
+        "669c171309c951da370c5b3a": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "vg1zz3hxt",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Hmm looks like the answer "
+                      },
+                      {
+                        "id": "669c16467b19f6aa387d6d68",
+                        "name": "answer",
+                        "isSlot": false,
+                        "type": "variable",
+                        "children": [
+                          {
+                            "text": ""
+                          }
+                        ]
+                      },
+                      {
+                        "text": " isn't correct, this is what the critic said:"
+                      }
+                    ]
+                  },
+                  {
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ]
+                  },
+                  {
+                    "children": [
+                      {
+                        "text": ""
+                      },
+                      {
+                        "id": "669c16987b19f6aa387d6d80",
+                        "name": "critic_response",
+                        "isSlot": false,
+                        "type": "variable",
+                        "children": [
+                          {
+                            "text": ""
+                          }
+                        ]
+                      },
+                      {
+                        "text": " "
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "669c171309c951da370c5b3b"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "669c171309c951da370c5b3a"
+        },
+        "669c171309c951da370c5b3c": {
+          "type": "block",
+          "data": {
+            "name": "False, critic response",
+            "steps": [
+              "669c171309c951da370c5b3a"
+            ],
+            "color": "#CB627B"
+          },
+          "nodeID": "669c171309c951da370c5b3c",
+          "coords": [
+            1323.1126513902796,
+            -738.9860890891841
+          ]
+        }
+      },
+      "offsetX": 660.3784532606145,
+      "offsetY": 881.3489202677721,
+      "modified": 1681419809,
+      "creatorID": 70616,
+      "variables": [],
+      "menuItems": [
+        {
+          "type": "NODE",
+          "sourceID": "start00000000000000000000"
+        }
+      ],
+      "menuNodeIDs": [],
+      "intentStepIDs": [],
+      "_id": "669c13ac7b19f6aa387d6c97",
+      "diagramID": "64386e21bb106b044ea34b78",
+      "versionID": "669c13ac7b19f6aa387d6c95"
+    }
+  },
+  "flows": [],
+  "entities": [],
+  "entityVariants": [],
+  "intents": [
+    {
+      "id": "6579c6bf984565862f64b783",
+      "name": "Yes",
+      "createdByID": 70616,
+      "folderID": null,
+      "description": "Trigger this intent when the user responds affirmatively or agrees to a question or statement using words like \"yes\", \"yea\", \"yup\", \"yep\", \"ya\", \"ok\", \"okay\", \"affirmative\", \"certainly\", or \"sure\".",
+      "automaticReprompt": false,
+      "entityOrder": [],
+      "automaticRepromptSettings": null,
+      "createdAt": "2024-07-20T19:44:44.000Z",
+      "updatedAt": "2024-07-20T19:44:44.000Z",
+      "updatedByID": 70616
+    },
+    {
+      "id": "6579c778dd3cca0fe0e0b152",
+      "name": "No",
+      "createdByID": 70616,
+      "folderID": null,
+      "description": "Trigger this intent when the user responds negatively or declines something, using words like \"no\", \"nope\", \"nay\", \"nah\", \"not now\", \"no way\", \"no thanks\", \"not\", \"nevermind\", or \"negative\".",
+      "automaticReprompt": false,
+      "entityOrder": [],
+      "automaticRepromptSettings": null,
+      "createdAt": "2024-07-20T19:44:44.000Z",
+      "updatedAt": "2024-07-20T19:44:44.000Z",
+      "updatedByID": 70616
+    },
+    {
+      "id": "None",
+      "name": "None",
+      "createdByID": 70616,
+      "folderID": null,
+      "description": null,
+      "automaticReprompt": false,
+      "entityOrder": [],
+      "automaticRepromptSettings": null,
+      "createdAt": "2024-07-20T19:44:44.000Z",
+      "updatedAt": "2024-07-20T19:44:44.000Z",
+      "updatedByID": 70616
+    }
+  ],
+  "utterances": [
+    {
+      "id": "65d72a6aa845250f3bd1b9af",
+      "text": [
+        {
+          "text": [
+            "sure"
+          ]
+        }
+      ],
+      "intentID": "6579c6bf984565862f64b783",
+      "language": "en-us",
+      "createdAt": "2024-07-20T19:44:44.000Z"
+    },
+    {
+      "id": "65d72a6aa845250f3bd1b9b0",
+      "text": [
+        {
+          "text": [
+            "certainly"
+          ]
+        }
+      ],
+      "intentID": "6579c6bf984565862f64b783",
+      "language": "en-us",
+      "createdAt": "2024-07-20T19:44:44.000Z"
+    },
+    {
+      "id": "65d72a6aa845250f3bd1b9b1",
+      "text": [
+        {
+          "text": [
+            "affirmative"
+          ]
+        }
+      ],
+      "intentID": "6579c6bf984565862f64b783",
+      "language": "en-us",
+      "createdAt": "2024-07-20T19:44:44.000Z"
+    },
+    {
+      "id": "65d72a6aa845250f3bd1b9b2",
+      "text": [
+        {
+          "text": [
+            "okay"
+          ]
+        }
+      ],
+      "intentID": "6579c6bf984565862f64b783",
+      "language": "en-us",
+      "createdAt": "2024-07-20T19:44:44.000Z"
+    },
+    {
+      "id": "65d72a6aa845250f3bd1b9b3",
+      "text": [
+        {
+          "text": [
+            "ok"
+          ]
+        }
+      ],
+      "intentID": "6579c6bf984565862f64b783",
+      "language": "en-us",
+      "createdAt": "2024-07-20T19:44:44.000Z"
+    },
+    {
+      "id": "65d72a6aa845250f3bd1b9b4",
+      "text": [
+        {
+          "text": [
+            "ya"
+          ]
+        }
+      ],
+      "intentID": "6579c6bf984565862f64b783",
+      "language": "en-us",
+      "createdAt": "2024-07-20T19:44:44.000Z"
+    },
+    {
+      "id": "65d72a6aa845250f3bd1b9b5",
+      "text": [
+        {
+          "text": [
+            "yep"
+          ]
+        }
+      ],
+      "intentID": "6579c6bf984565862f64b783",
+      "language": "en-us",
+      "createdAt": "2024-07-20T19:44:44.000Z"
+    },
+    {
+      "id": "65d72a6aa845250f3bd1b9b6",
+      "text": [
+        {
+          "text": [
+            "yup"
+          ]
+        }
+      ],
+      "intentID": "6579c6bf984565862f64b783",
+      "language": "en-us",
+      "createdAt": "2024-07-20T19:44:44.000Z"
+    },
+    {
+      "id": "65d72a6aa845250f3bd1b9b7",
+      "text": [
+        {
+          "text": [
+            "yea"
+          ]
+        }
+      ],
+      "intentID": "6579c6bf984565862f64b783",
+      "language": "en-us",
+      "createdAt": "2024-07-20T19:44:44.000Z"
+    },
+    {
+      "id": "65d72a6aa845250f3bd1b9b8",
+      "text": [
+        {
+          "text": [
+            "yes"
+          ]
+        }
+      ],
+      "intentID": "6579c6bf984565862f64b783",
+      "language": "en-us",
+      "createdAt": "2024-07-20T19:44:44.000Z"
+    },
+    {
+      "id": "65d72a6aa845250f3bd1b9b9",
+      "text": [
+        {
+          "text": [
+            "negative"
+          ]
+        }
+      ],
+      "intentID": "6579c778dd3cca0fe0e0b152",
+      "language": "en-us",
+      "createdAt": "2024-07-20T19:44:44.000Z"
+    },
+    {
+      "id": "65d72a6aa845250f3bd1b9ba",
+      "text": [
+        {
+          "text": [
+            "nevermind"
+          ]
+        }
+      ],
+      "intentID": "6579c778dd3cca0fe0e0b152",
+      "language": "en-us",
+      "createdAt": "2024-07-20T19:44:44.000Z"
+    },
+    {
+      "id": "65d72a6aa845250f3bd1b9bb",
+      "text": [
+        {
+          "text": [
+            "not"
+          ]
+        }
+      ],
+      "intentID": "6579c778dd3cca0fe0e0b152",
+      "language": "en-us",
+      "createdAt": "2024-07-20T19:44:44.000Z"
+    },
+    {
+      "id": "65d72a6aa845250f3bd1b9bc",
+      "text": [
+        {
+          "text": [
+            "no thanks"
+          ]
+        }
+      ],
+      "intentID": "6579c778dd3cca0fe0e0b152",
+      "language": "en-us",
+      "createdAt": "2024-07-20T19:44:44.000Z"
+    },
+    {
+      "id": "65d72a6aa845250f3bd1b9bd",
+      "text": [
+        {
+          "text": [
+            "no way"
+          ]
+        }
+      ],
+      "intentID": "6579c778dd3cca0fe0e0b152",
+      "language": "en-us",
+      "createdAt": "2024-07-20T19:44:44.000Z"
+    },
+    {
+      "id": "65d72a6aa845250f3bd1b9be",
+      "text": [
+        {
+          "text": [
+            "not now"
+          ]
+        }
+      ],
+      "intentID": "6579c778dd3cca0fe0e0b152",
+      "language": "en-us",
+      "createdAt": "2024-07-20T19:44:44.000Z"
+    },
+    {
+      "id": "65d72a6aa845250f3bd1b9bf",
+      "text": [
+        {
+          "text": [
+            "nah"
+          ]
+        }
+      ],
+      "intentID": "6579c778dd3cca0fe0e0b152",
+      "language": "en-us",
+      "createdAt": "2024-07-20T19:44:44.000Z"
+    },
+    {
+      "id": "65d72a6aa845250f3bd1b9c0",
+      "text": [
+        {
+          "text": [
+            "nay"
+          ]
+        }
+      ],
+      "intentID": "6579c778dd3cca0fe0e0b152",
+      "language": "en-us",
+      "createdAt": "2024-07-20T19:44:44.000Z"
+    },
+    {
+      "id": "65d72a6aa845250f3bd1b9c1",
+      "text": [
+        {
+          "text": [
+            "nope"
+          ]
+        }
+      ],
+      "intentID": "6579c778dd3cca0fe0e0b152",
+      "language": "en-us",
+      "createdAt": "2024-07-20T19:44:44.000Z"
+    },
+    {
+      "id": "65d72a6aa845250f3bd1b9c2",
+      "text": [
+        {
+          "text": [
+            "no"
+          ]
+        }
+      ],
+      "intentID": "6579c778dd3cca0fe0e0b152",
+      "language": "en-us",
+      "createdAt": "2024-07-20T19:44:44.000Z"
+    }
+  ],
+  "requiredEntities": [],
+  "folders": [],
+  "responses": [],
+  "responseVariants": [],
+  "responseMessages": [],
+  "responseAttachments": [],
+  "responseDiscriminators": [],
+  "variables": [
+    {
+      "id": "sessions",
+      "name": "sessions",
+      "createdByID": 70616,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "number",
+      "description": "The number of times a particular user has opened the app.",
+      "defaultValue": null,
+      "createdAt": "2024-07-20T19:44:44.000Z",
+      "updatedAt": "2024-07-20T19:44:44.000Z",
+      "updatedByID": 70616
+    },
+    {
+      "id": "user_id",
+      "name": "user_id",
+      "createdByID": 70616,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The user's unique ID.",
+      "defaultValue": null,
+      "createdAt": "2024-07-20T19:44:44.000Z",
+      "updatedAt": "2024-07-20T19:44:44.000Z",
+      "updatedByID": 70616
+    },
+    {
+      "id": "timestamp",
+      "name": "timestamp",
+      "createdByID": 70616,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "number",
+      "description": "UNIX timestamp (number of seconds since January 1st, 1970 at UTC).",
+      "defaultValue": null,
+      "createdAt": "2024-07-20T19:44:44.000Z",
+      "updatedAt": "2024-07-20T19:44:44.000Z",
+      "updatedByID": 70616
+    },
+    {
+      "id": "platform",
+      "name": "platform",
+      "createdByID": 70616,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The platform your agent is running on (e.g. \"voiceflow\").",
+      "defaultValue": null,
+      "createdAt": "2024-07-20T19:44:44.000Z",
+      "updatedAt": "2024-07-20T19:44:44.000Z",
+      "updatedByID": 70616
+    },
+    {
+      "id": "intent_confidence",
+      "name": "intent_confidence",
+      "createdByID": 70616,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "number",
+      "description": "The confidence interval (measured as a value from 0 to 100) for the most recently matched intent.",
+      "defaultValue": null,
+      "createdAt": "2024-07-20T19:44:44.000Z",
+      "updatedAt": "2024-07-20T19:44:44.000Z",
+      "updatedByID": 70616
+    },
+    {
+      "id": "last_response",
+      "name": "last_response",
+      "createdByID": 70616,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The agent's last response (text/speak) in a string.",
+      "defaultValue": null,
+      "createdAt": "2024-07-20T19:44:44.000Z",
+      "updatedAt": "2024-07-20T19:44:44.000Z",
+      "updatedByID": 70616
+    },
+    {
+      "id": "last_event",
+      "name": "last_event",
+      "createdByID": 70616,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "any",
+      "description": "The object containing the last event that the user client has triggered.",
+      "defaultValue": null,
+      "createdAt": "2024-07-20T19:44:44.000Z",
+      "updatedAt": "2024-07-20T19:44:44.000Z",
+      "updatedByID": 70616
+    },
+    {
+      "id": "last_utterance",
+      "name": "last_utterance",
+      "createdByID": 70616,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The user's last utterance in a text string.",
+      "defaultValue": null,
+      "createdAt": "2024-07-20T19:44:44.000Z",
+      "updatedAt": "2024-07-20T19:44:44.000Z",
+      "updatedByID": 70616
+    },
+    {
+      "id": "vf_memory",
+      "name": "vf_memory",
+      "createdByID": 70616,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "Last 10 user inputs and agent responses in a string (e.g. \"agent: How can i help?\"\nuser: What's the weather today?).",
+      "defaultValue": null,
+      "createdAt": "2024-07-20T19:44:44.000Z",
+      "updatedAt": "2024-07-20T19:44:44.000Z",
+      "updatedByID": 70616
+    },
+    {
+      "id": "669c16467b19f6aa387d6d68",
+      "name": "answer",
+      "createdByID": 70616,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "",
+      "defaultValue": null,
+      "createdAt": "2024-07-20T19:55:50.000Z",
+      "updatedAt": "2024-07-20T19:55:50.000Z",
+      "updatedByID": 70616
+    },
+    {
+      "id": "669c16987b19f6aa387d6d80",
+      "name": "critic_response",
+      "createdByID": 70616,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "",
+      "defaultValue": null,
+      "createdAt": "2024-07-20T19:57:12.000Z",
+      "updatedAt": "2024-07-20T19:57:12.000Z",
+      "updatedByID": 70616
+    },
+    {
+      "id": "669c16147b19f6aa387d6d5f",
+      "name": "question",
+      "createdByID": 70616,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "",
+      "defaultValue": null,
+      "createdAt": "2024-07-20T19:55:01.000Z",
+      "updatedAt": "2024-07-20T19:55:01.000Z",
+      "updatedByID": 70616
+    }
+  ],
+  "workflows": [
+    {
+      "id": "669c13acbd94830008facf30",
+      "name": "Home",
+      "createdByID": 70616,
+      "folderID": null,
+      "status": null,
+      "isStart": true,
+      "diagramID": "64386e21bb106b044ea34b78",
+      "assigneeID": null,
+      "description": null,
+      "createdAt": "2024-07-20T19:44:44.000Z",
+      "updatedAt": "2024-07-20T20:01:51.000Z",
+      "updatedByID": 70616
+    }
+  ],
+  "attachments": [],
+  "cardButtons": [],
+  "functions": [],
+  "functionPaths": [],
+  "functionVariables": [],
+  "project": {
+    "type": "chat",
+    "name": "04_02",
+    "image": "",
+    "teamID": "6an4Q11LEb",
+    "members": [],
+    "privacy": "public",
+    "platform": "webchat",
+    "_version": 1.2,
+    "linkType": "STRAIGHT",
+    "creatorID": 70616,
+    "updatedBy": 70616,
+    "apiPrivacy": "private",
+    "platformData": {
+      "invocationName": "template project general"
+    },
+    "customThemes": [],
+    "aiAssistSettings": {
+      "aiPlayground": true
+    },
+    "_id": "669c13ac7b19f6aa387d6c94",
+    "updatedAt": "2024-07-20T20:02:04.727Z",
+    "knowledgeBase": {
+      "settings": {
+        "summarization": {
+          "model": "gpt-3.5-turbo",
+          "system": "You are an FAQ AI chat assistant. Information will be provided to help answer the user's questions. Always summarize your response to be as brief as possible and be extremely concise. Your responses should be fewer than a couple of sentences.",
+          "temperature": 0.1,
+          "mode": "prompt",
+          "prompt": ""
+        },
+        "chunkStrategy": {
+          "type": "recursive_text_splitter",
+          "size": 1200,
+          "overlap": 200
+        },
+        "search": {
+          "limit": 3,
+          "metric": "IP"
+        },
+        "embeddingModel": {
+          "model": "text-embedding-3-large",
+          "size": 1024
+        }
+      },
+      "documents": {}
+    },
+    "devVersion": "669c13ac7b19f6aa387d6c95"
+  },
+  "_version": "1.2",
+  "variableStates": []
+}
