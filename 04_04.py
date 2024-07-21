@@ -19,8 +19,8 @@ def calculate_results(generated_results,references):
 			result = entailment_pipe({'text':generated, 'text_pair': references})
 			print("NLI Entailment", result)
 
-generated_results = [["the cat sat"]]
-references = ["the cat sat on a little mat"]
+generated_results = ["the cat sat"]
+references = [["the cat sat on a little mat"]]
 calculate_results(generated_results, references)
 
 generated_results = [["the number of cards in a standard deck of cards is 52"],  ["54 cards"], ["52 cards"]]
