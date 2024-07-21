@@ -7,20 +7,21 @@ entailment_pipe = pipeline("text-classification", model="MoritzLaurer/mDeBERTa-v
 
 def calculate_results(generated_results,references):
 		for generated in generated_results:
+			print("\nStatement: ", generated[0], "\nReference: ", references[0])
 			results = bleu.compute(predictions=generated, references=references,max_order=2)
 			print("Bleu", results)
 
-			print("\nStatement: ", generated[0], "\nReference: ", references[0])
+			results = rouge.compute(predictions=generated, references=references)
+			print("Rouge", results)
+			
 			results = bertscore.compute(predictions=generated, references=references, lang="en")
 			print("Bert Score", results)
 
-			results = rouge.compute(predictions=generated, references=references)
-			print("Rouge", results)
 			result = entailment_pipe({'text':generated, 'text_pair': references})
 			print("NLI Entailment", result)
 
-generated_results = [["the cat sat"]]
-references = ["the cat sat on a little mat"]
+generated_results = [["the cat sat on a little mat"]]
+references = ["the cat sat"]
 calculate_results(generated_results, references)
 
 generated_results = [["the number of cards in a standard deck of cards is 52"],  ["54 cards"], ["52 cards"]]
