@@ -2,7 +2,6 @@ import openai
 openai_client = openai.OpenAI()
 llm_model = "gpt-4o-mini"
 
-
 def call_openai(prompt, model="gpt-4o-mini"):
 	chat_completion = openai_client.chat.completions.create(
 		messages=[
@@ -37,7 +36,7 @@ question = "What is the capital of France?"
 answer = answer_generator(question)
 assessment = answer_critic(question, answer)
 
-for i in range(0, 20):
+for i in range(0, 10):
 	question = "How many years were between the invention of the radio and chat gpt, provide a number."
 	answer = answer_generator(question)
 	assessment = answer_critic(question, answer)
