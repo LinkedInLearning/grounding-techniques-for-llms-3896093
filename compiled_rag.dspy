@@ -1,0 +1,43 @@
+{
+  "self": {
+    "lm": null,
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "question": "Which of these publications was most recently published, Who Put the Bomp or Self?",
+        "rationale": "determine which publication was released last. We need to check the publication dates of both \"Who Put the Bomp\" and \"Self.\" After comparing the dates, we can identify the most recent one.",
+        "answer": "Self"
+      },
+      {
+        "augmented": true,
+        "question": "Which magazine has published articles by Scott Shaw, Tae Kwon Do Times or Southwest Art?",
+        "rationale": "identify the magazine that features articles by Scott Shaw. We know that Scott Shaw is associated with martial arts and art, so we need to determine which magazine aligns with those themes. Tae Kwon Do Times focuses on martial arts, while Southwest Art is centered on art. Since Scott Shaw is known for his work in both areas, we can conclude that the magazine is likely to be one of these two.",
+        "answer": "Tae Kwon Do Times"
+      },
+      {
+        "augmented": true,
+        "question": "Which is taller, the Empire State Building or the Bank of America Tower?",
+        "rationale": "compare their heights. The Empire State Building is 1,454 feet tall, while the Bank of America Tower is 1,200 feet tall. Therefore, the Empire State Building is taller.",
+        "answer": "Empire State Building"
+      },
+      {
+        "augmented": true,
+        "question": "Which American actress who made their film debut in the 1995 teen drama \"Kids\" was the co-founder of Voto Latino?",
+        "rationale": "identify the actress who fits the description. The film \"Kids\" featured several young actors, and among them, one is known for her activism and co-founding Voto Latino. This actress is Rosario Dawson.",
+        "answer": "Rosario Dawson"
+      },
+      {
+        "augmented": true,
+        "question": "Samantha Cristoforetti and Mark Shuttleworth are both best known for being first in their field to go where? ",
+        "rationale": "determine their achievements. Samantha Cristoforetti is known for being the first Italian woman in space, while Mark Shuttleworth is known for being the first African in space. Both are recognized for their contributions to space exploration.",
+        "answer": "Space"
+      }
+    ],
+    "signature_instructions": "Answer questions with short factoid answers.",
+    "signature_prefix": "Answer:",
+    "extended_signature_instructions": "Answer questions with short factoid answers.",
+    "extended_signature_prefix": "Answer:"
+  }
+}
