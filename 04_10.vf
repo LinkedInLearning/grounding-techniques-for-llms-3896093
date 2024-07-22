@@ -89,7 +89,7 @@
               "slots": []
             }
           ],
-          "noteID": "536am08s8",
+          "noteID": "kf22309bv",
           "description": "Trigger this intent when the user responds affirmatively or agrees to a question or statement using words like \"yes\", \"yea\", \"yup\", \"yep\", \"ya\", \"ok\", \"okay\", \"affirmative\", \"certainly\", or \"sure\"."
         },
         {
@@ -138,7 +138,7 @@
               "slots": []
             }
           ],
-          "noteID": "546an085p",
+          "noteID": "kf2240996",
           "description": "Trigger this intent when the user responds negatively or declines something, using words like \"no\", \"nope\", \"nay\", \"nah\", \"not now\", \"no way\", \"no thanks\", \"not\", \"nevermind\", or \"negative\"."
         },
         {
@@ -146,6 +146,86 @@
           "name": "None",
           "slots": [],
           "inputs": [],
+          "noteID": null
+        },
+        {
+          "key": "669ece0a0507e9cca82d1667",
+          "name": "Exit game",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "Exit",
+              "slots": []
+            },
+            {
+              "text": "I want to exit",
+              "slots": []
+            },
+            {
+              "text": "Stop playing trivia",
+              "slots": []
+            },
+            {
+              "text": "Close the game",
+              "slots": []
+            },
+            {
+              "text": "I'm done playing",
+              "slots": []
+            },
+            {
+              "text": "End the game",
+              "slots": []
+            },
+            {
+              "text": "Leave the game",
+              "slots": []
+            },
+            {
+              "text": "Quit the game",
+              "slots": []
+            }
+          ],
+          "noteID": null
+        },
+        {
+          "key": "669ece490507e9cca82d16ab",
+          "name": "Check Score",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "Score",
+              "slots": []
+            },
+            {
+              "text": "I want to check my score",
+              "slots": []
+            },
+            {
+              "text": "Check my score",
+              "slots": []
+            },
+            {
+              "text": "Give me an update on my score",
+              "slots": []
+            },
+            {
+              "text": "What's my current score?",
+              "slots": []
+            },
+            {
+              "text": "I need to know my score",
+              "slots": []
+            },
+            {
+              "text": "Can you check my score?",
+              "slots": []
+            },
+            {
+              "text": "What is my score?",
+              "slots": []
+            }
+          ],
           "noteID": null
         }
       ],
@@ -177,13 +257,203 @@
     "prototype": {
       "type": "chat",
       "data": {
-        "name": "04_08",
+        "name": "04_10",
         "locales": [
           "en-US"
         ]
       },
       "model": {
-        "intents": [],
+        "intents": [
+          {
+            "key": "6579c6bf984565862f64b783",
+            "name": "Yes",
+            "slots": [],
+            "inputs": [
+              {
+                "text": "sure",
+                "slots": []
+              },
+              {
+                "text": "certainly",
+                "slots": []
+              },
+              {
+                "text": "affirmative",
+                "slots": []
+              },
+              {
+                "text": "okay",
+                "slots": []
+              },
+              {
+                "text": "ok",
+                "slots": []
+              },
+              {
+                "text": "ya",
+                "slots": []
+              },
+              {
+                "text": "yep",
+                "slots": []
+              },
+              {
+                "text": "yup",
+                "slots": []
+              },
+              {
+                "text": "yea",
+                "slots": []
+              },
+              {
+                "text": "yes",
+                "slots": []
+              }
+            ],
+            "noteID": "kf22309bv",
+            "description": "Trigger this intent when the user responds affirmatively or agrees to a question or statement using words like \"yes\", \"yea\", \"yup\", \"yep\", \"ya\", \"ok\", \"okay\", \"affirmative\", \"certainly\", or \"sure\"."
+          },
+          {
+            "key": "6579c778dd3cca0fe0e0b152",
+            "name": "No",
+            "slots": [],
+            "inputs": [
+              {
+                "text": "negative",
+                "slots": []
+              },
+              {
+                "text": "nevermind",
+                "slots": []
+              },
+              {
+                "text": "not",
+                "slots": []
+              },
+              {
+                "text": "no thanks",
+                "slots": []
+              },
+              {
+                "text": "no way",
+                "slots": []
+              },
+              {
+                "text": "not now",
+                "slots": []
+              },
+              {
+                "text": "nah",
+                "slots": []
+              },
+              {
+                "text": "nay",
+                "slots": []
+              },
+              {
+                "text": "nope",
+                "slots": []
+              },
+              {
+                "text": "no",
+                "slots": []
+              }
+            ],
+            "noteID": "kf2240996",
+            "description": "Trigger this intent when the user responds negatively or declines something, using words like \"no\", \"nope\", \"nay\", \"nah\", \"not now\", \"no way\", \"no thanks\", \"not\", \"nevermind\", or \"negative\"."
+          },
+          {
+            "key": "669ece0a0507e9cca82d1667",
+            "name": "Exit game",
+            "slots": [],
+            "inputs": [
+              {
+                "text": "Exit",
+                "slots": []
+              },
+              {
+                "text": "I want to exit",
+                "slots": []
+              },
+              {
+                "text": "Stop playing trivia",
+                "slots": []
+              },
+              {
+                "text": "Close the game",
+                "slots": []
+              },
+              {
+                "text": "I'm done playing",
+                "slots": []
+              },
+              {
+                "text": "End the game",
+                "slots": []
+              },
+              {
+                "text": "Leave the game",
+                "slots": []
+              },
+              {
+                "text": "Quit the game",
+                "slots": []
+              }
+            ],
+            "noteID": null
+          },
+          {
+            "key": "669ece490507e9cca82d16ab",
+            "name": "Check Score",
+            "slots": [],
+            "inputs": [
+              {
+                "text": "Score",
+                "slots": []
+              },
+              {
+                "text": "I want to check my score",
+                "slots": []
+              },
+              {
+                "text": "Check my score",
+                "slots": []
+              },
+              {
+                "text": "Give me an update on my score",
+                "slots": []
+              },
+              {
+                "text": "What's my current score?",
+                "slots": []
+              },
+              {
+                "text": "I need to know my score",
+                "slots": []
+              },
+              {
+                "text": "Can you check my score?",
+                "slots": []
+              },
+              {
+                "text": "What is my score?",
+                "slots": []
+              }
+            ],
+            "noteID": null
+          },
+          {
+            "key": "None",
+            "name": "None",
+            "slots": [],
+            "inputs": [
+              {
+                "text": "None"
+              }
+            ],
+            "noteID": null
+          }
+        ],
         "slots": []
       },
       "context": {
@@ -200,7 +470,7 @@
       "surveyorContext": {
         "functionDefinitions": {
           "65a81f3a2f5982dcf3cc7048": {
-            "codeId": "669e97619c4c97f9286f3ea2-65a81f3a2f5982dcf3cc7048.js",
+            "codeId": "669ecdb60507e9cca82d1616-65a81f3a2f5982dcf3cc7048.js",
             "inputVars": {
               "question": {
                 "type": "text"
@@ -228,7 +498,12 @@
         "permissions": [],
         "extraIntents": [],
         "usedEventsSet": [],
-        "usedIntentsSet": [],
+        "usedIntentsSet": [
+          "669ece490507e9cca82d16ab",
+          "6579c6bf984565862f64b783",
+          "6579c778dd3cca0fe0e0b152",
+          "669ece0a0507e9cca82d1667"
+        ],
         "goToIntentsSet": [],
         "cmsVariables": {
           "sessions": {
@@ -305,7 +580,7 @@
           },
           "VFAPIKEY": {
             "isSystem": false,
-            "defaultValue": "VF.DM.669e9c111091ccc3ed5c1c53.CJYcCKCx8nhHUqI4",
+            "defaultValue": "",
             "datatype": "any",
             "isArray": false
           }
@@ -338,8 +613,8 @@
       "cleaned_chunks",
       "VFAPIKEY"
     ],
-    "_id": "669e97619c4c97f9286f3ea2",
-    "updatedAt": "2024-07-22T20:25:09.304Z",
+    "_id": "669ecdb60507e9cca82d1616",
+    "updatedAt": "2024-07-22T21:50:44.608Z",
     "domains": [
       {
         "id": "cla06iyr900b206pkh8d4ap8n",
@@ -350,14 +625,468 @@
         ],
         "rootDiagramID": "64386e21bb106b044ea34b78",
         "updatedBy": 70616,
-        "updatedAt": "2024-07-22T17:31:13.136Z"
+        "updatedAt": "2024-07-22T21:23:02.674Z"
       }
     ],
-    "projectID": "669e97619c4c97f9286f3ea1",
+    "projectID": "669ecdb60507e9cca82d1615",
     "rootDiagramID": "64386e21bb106b044ea34b78",
     "templateDiagramID": "643872531e80120007759e05"
   },
   "diagrams": {
+    "669ece31f3621d8d9d9ef1c9": {
+      "name": "Check score",
+      "type": "TOPIC",
+      "zoom": 100,
+      "nodes": {
+        "669ece312d08ad00072f61b3": {
+          "coords": [
+            360,
+            120
+          ],
+          "type": "block",
+          "data": {
+            "name": "",
+            "color": "",
+            "steps": [
+              "669ece312d08ad00072f61b2"
+            ],
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "669ece312d08ad00072f61b3"
+        },
+        "669ece312d08ad00072f61b2": {
+          "nodeID": "669ece312d08ad00072f61b2",
+          "type": "trigger",
+          "data": {
+            "name": "",
+            "items": [
+              {
+                "id": "clyxhx5u10cnp3b7h5phyuvha",
+                "type": "intent",
+                "resourceID": "669ece490507e9cca82d16ab",
+                "settings": {
+                  "local": false
+                }
+              }
+            ],
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "id": "669ece312d08ad00072f61b4",
+                  "type": "next",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          450.79,
+                          142
+                        ]
+                      },
+                      {
+                        "point": [
+                          601.5,
+                          140.44
+                        ]
+                      }
+                    ]
+                  },
+                  "target": "669ece52ee7b9aabed959674"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          }
+        },
+        "669ece52ee7b9aabed959674": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "k7csn3he3",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Your score is "
+                      },
+                      {
+                        "id": "669ea5f59c4c97f9286f44a9",
+                        "name": "user_score",
+                        "isSlot": false,
+                        "type": "variable",
+                        "children": [
+                          {
+                            "text": ""
+                          }
+                        ]
+                      },
+                      {
+                        "text": " "
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "669ece52ee7b9aabed959675",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          933.5,
+                          140.44
+                        ]
+                      },
+                      {
+                        "point": [
+                          972.75,
+                          140.75
+                        ]
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "669ece52ee7b9aabed959674"
+        },
+        "669ece52ee7b9aabed959676": {
+          "type": "block",
+          "data": {
+            "name": "Score",
+            "steps": [
+              "669ece52ee7b9aabed959674",
+              "669ececbee7b9aabed95969c"
+            ],
+            "color": ""
+          },
+          "nodeID": "669ece52ee7b9aabed959676",
+          "coords": [
+            767.5,
+            61.43746948242186
+          ]
+        },
+        "669eceb4ee7b9aabed959690": {
+          "type": "buttons",
+          "data": {
+            "name": "Buttons",
+            "buttons": [
+              {
+                "id": "8tdf83hc8",
+                "name": "Yes",
+                "actions": [],
+                "intent": "6579c6bf984565862f64b783"
+              },
+              {
+                "id": "yodkl3hiv",
+                "name": "No",
+                "actions": [],
+                "intent": "6579c778dd3cca0fe0e0b152"
+              }
+            ],
+            "intentScope": "GLOBAL",
+            "noMatch": {
+              "types": [],
+              "pathName": "No match",
+              "randomize": false,
+              "reprompts": []
+            },
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "else": {
+                  "type": "else",
+                  "target": null,
+                  "id": "669eceb4ee7b9aabed959692"
+                }
+              },
+              "dynamic": [
+                {
+                  "type": "",
+                  "target": "669ecee4ee7b9aabed9596a9",
+                  "id": "669eceb4ee7b9aabed959691",
+                  "data": {}
+                },
+                {
+                  "id": "669ecec2ee7b9aabed95969a",
+                  "type": "",
+                  "target": "669ecedeee7b9aabed9596a3",
+                  "data": {}
+                }
+              ]
+            }
+          },
+          "nodeID": "669eceb4ee7b9aabed959690"
+        },
+        "669eceb4ee7b9aabed959693": {
+          "type": "block",
+          "data": {
+            "name": "Continue playing",
+            "steps": [
+              "669eceb4ee7b9aabed959690"
+            ],
+            "color": ""
+          },
+          "nodeID": "669eceb4ee7b9aabed959693",
+          "coords": [
+            1138.75,
+            61.74996948242186
+          ]
+        },
+        "669ececbee7b9aabed95969c": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "uzdny3hko",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Do you want to continue playing?"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "669eceb4ee7b9aabed959693",
+                  "id": "669ececbee7b9aabed95969d",
+                  "data": {}
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "669ececbee7b9aabed95969c"
+        },
+        "669ecedeee7b9aabed9596a2": {
+          "type": "exit",
+          "data": {
+            "name": "",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "669ecedeee7b9aabed9596a2"
+        },
+        "669ecedeee7b9aabed9596a3": {
+          "type": "actions",
+          "data": {
+            "name": "",
+            "steps": [
+              "669ecedeee7b9aabed9596a2"
+            ]
+          },
+          "nodeID": "669ecedeee7b9aabed9596a3",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "669ecee4ee7b9aabed9596a8": {
+          "type": "goToNode",
+          "data": {
+            "name": "",
+            "nodeID": "669e9861ee7b9aabed9591b1",
+            "diagramID": "64386e21bb106b044ea34b78",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "669ecee4ee7b9aabed9596a8"
+        },
+        "669ecee4ee7b9aabed9596a9": {
+          "type": "actions",
+          "data": {
+            "name": "",
+            "steps": [
+              "669ecee4ee7b9aabed9596a8"
+            ]
+          },
+          "nodeID": "669ecee4ee7b9aabed9596a9",
+          "coords": [
+            0,
+            0
+          ]
+        }
+      },
+      "offsetX": 0,
+      "offsetY": 0,
+      "modified": 1721683505,
+      "variables": [],
+      "creatorID": 70616,
+      "_id": "669ece31f3621d8d9d9ef1c9",
+      "diagramID": "669ece31f3621d8d9d9ef1c9",
+      "versionID": "669ecdb60507e9cca82d1616"
+    },
+    "669ecdf2f3621d8d9d9ef1c8": {
+      "name": "Exit game",
+      "type": "TOPIC",
+      "zoom": 100,
+      "nodes": {
+        "669ecdf22d08ad00072f61b0": {
+          "coords": [
+            360,
+            120
+          ],
+          "type": "block",
+          "data": {
+            "name": "",
+            "color": "",
+            "steps": [
+              "669ecdf22d08ad00072f61af"
+            ],
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "669ecdf22d08ad00072f61b0"
+        },
+        "669ecdf22d08ad00072f61af": {
+          "nodeID": "669ecdf22d08ad00072f61af",
+          "type": "trigger",
+          "data": {
+            "name": "",
+            "items": [
+              {
+                "id": "clyxhvtb80cek3b7hppw2w4fc",
+                "type": "intent",
+                "resourceID": "669ece0a0507e9cca82d1667",
+                "settings": {
+                  "local": false
+                }
+              }
+            ],
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "id": "669ecdf22d08ad00072f61b1",
+                  "type": "next",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          442.3,
+                          142
+                        ]
+                      },
+                      {
+                        "point": [
+                          560.25,
+                          142.94
+                        ]
+                      }
+                    ]
+                  },
+                  "target": "669ece0eee7b9aabed95965a"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          }
+        },
+        "669ece0eee7b9aabed95965a": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "nycf53h49",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "No problem, your score was "
+                      },
+                      {
+                        "id": "669ea5f59c4c97f9286f44a9",
+                        "name": "user_score",
+                        "isSlot": false,
+                        "type": "variable",
+                        "children": [
+                          {
+                            "text": ""
+                          }
+                        ]
+                      },
+                      {
+                        "text": " thanks for playing!"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "669ece0eee7b9aabed95965b"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "669ece0eee7b9aabed95965a"
+        },
+        "669ece0eee7b9aabed95965c": {
+          "type": "block",
+          "data": {
+            "name": "Exit game",
+            "steps": [
+              "669ece0eee7b9aabed95965a"
+            ],
+            "color": ""
+          },
+          "nodeID": "669ece0eee7b9aabed95965c",
+          "coords": [
+            726.25,
+            63.937499999999986
+          ]
+        }
+      },
+      "offsetX": 0,
+      "offsetY": 0,
+      "modified": 1721683442,
+      "variables": [],
+      "creatorID": 70616,
+      "_id": "669ecdf2f3621d8d9d9ef1c8",
+      "diagramID": "669ecdf2f3621d8d9d9ef1c8",
+      "versionID": "669ecdb60507e9cca82d1616"
+    },
     "643872531e80120007759e05": {
       "name": "Template Diagram",
       "type": "TEMPLATE",
@@ -1379,9 +2108,9 @@
       "creatorID": 70616,
       "variables": [],
       "menuItems": [],
-      "_id": "669e97619c4c97f9286f3ea3",
+      "_id": "669ecdb60507e9cca82d1617",
       "diagramID": "643872531e80120007759e05",
-      "versionID": "669e97619c4c97f9286f3ea2"
+      "versionID": "669ecdb60507e9cca82d1616"
     },
     "64386e21bb106b044ea34b78": {
       "name": "ROOT",
@@ -1517,34 +2246,21 @@
               "builtIn": {
                 "next": {
                   "type": "next",
-                  "target": "669e9861ee7b9aabed9591b1",
+                  "target": "669ecf07ee7b9aabed959714",
                   "id": "669e97d4ee7b9aabed9591a0",
                   "data": {
                     "points": [
                       {
                         "point": [
                           358.62,
-                          -534.2
+                          -454.36
                         ]
                       },
                       {
                         "point": [
-                          392.62,
-                          -534.2
+                          395.78,
+                          -456.19
                         ]
-                      },
-                      {
-                        "point": [
-                          392.62,
-                          -707.2
-                        ]
-                      },
-                      {
-                        "point": [
-                          426.62,
-                          -707.2
-                        ],
-                        "allowedToTop": true
                       }
                     ]
                   }
@@ -1563,14 +2279,14 @@
             "sets": [
               {
                 "mode": "prompt",
-                "prompt": "Output a random trivia category, only say the name. Include a few extra adjectives.",
+                "prompt": "Output a random trivia category, things like movies, history, geography and sports, be eccentric. Output 1 word.",
                 "variable": "669e98879c4c97f9286f3f27"
               }
             ],
             "system": "",
             "maxTokens": 128,
             "overrideParams": false,
-            "model": "gpt-4o",
+            "model": "gpt-3.5-turbo",
             "temperature": 1,
             "portsV2": {
               "byKey": {},
@@ -1639,8 +2355,8 @@
           },
           "nodeID": "669e9861ee7b9aabed9591b1",
           "coords": [
-            591.6215467393855,
-            -734.1972448691886
+            987.8715467393855,
+            -727.9472448691886
           ]
         },
         "669e989dee7b9aabed9591bb": {
@@ -1655,8 +2371,8 @@
           },
           "nodeID": "669e989dee7b9aabed9591bb",
           "coords": [
-            994.8715467393855,
-            -734.4472448691886
+            1391.1215467393854,
+            -728.1972448691886
           ]
         },
         "669ea449ee7b9aabed9591ee": {
@@ -1731,14 +2447,14 @@
                     "points": [
                       {
                         "point": [
-                          1574.4,
-                          -24.09
+                          1970.53,
+                          -17.69
                         ]
                       },
                       {
                         "point": [
-                          1723.28,
-                          -25.85
+                          2119.53,
+                          -19.6
                         ]
                       }
                     ]
@@ -1754,26 +2470,26 @@
                     "points": [
                       {
                         "point": [
-                          1574.4,
-                          -78.58
+                          1970.53,
+                          -72.19
                         ]
                       },
                       {
                         "point": [
-                          1645.4,
-                          -78.58
+                          2044.71,
+                          -72.19
                         ]
                       },
                       {
                         "point": [
-                          1645.4,
-                          -389.47
+                          2044.71,
+                          -383.22
                         ]
                       },
                       {
                         "point": [
-                          1716.4,
-                          -389.47
+                          2118.9,
+                          -383.22
                         ],
                         "allowedToTop": true
                       }
@@ -1852,8 +2568,8 @@
           },
           "nodeID": "669ea605ee7b9aabed959205",
           "coords": [
-            1881.3988256383032,
-            -416.47234805183473
+            2283.898825638303,
+            -410.22234805183473
           ]
         },
         "669ea628ee7b9aabed95920e": {
@@ -1900,7 +2616,7 @@
                   {
                     "children": [
                       {
-                        "text": "Hmm that doesn't seem right, next question."
+                        "text": "Hmm that doesn't seem right, the correct answer is:"
                       }
                     ]
                   }
@@ -1977,8 +2693,8 @@
           },
           "nodeID": "669ea643ee7b9aabed959219",
           "coords": [
-            1888.276780836341,
-            -52.849611790530616
+            2284.526780836341,
+            -46.599611790530616
           ]
         },
         "669ea678ee7b9aabed959222": {
@@ -2001,32 +2717,32 @@
                     "points": [
                       {
                         "point": [
-                          1564.4,
-                          -645.86
+                          1960.53,
+                          -639.43
                         ]
                       },
                       {
                         "point": [
-                          1588.4,
-                          -645.86
+                          1984.53,
+                          -639.43
                         ]
                       },
                       {
                         "point": [
-                          1588.4,
-                          -432.02
+                          1984.53,
+                          -425.68
                         ]
                       },
                       {
                         "point": [
-                          1408.28,
-                          -432.02
+                          1804.53,
+                          -425.68
                         ]
                       },
                       {
                         "point": [
-                          1408.28,
-                          -218.19
+                          1804.53,
+                          -211.94
                         ],
                         "toTop": true,
                         "allowedToTop": true
@@ -2060,8 +2776,8 @@
           },
           "nodeID": "669ea678ee7b9aabed959225",
           "coords": [
-            1398.276780836341,
-            -734.3496117905306
+            1794.526780836341,
+            -728.0996117905306
           ]
         },
         "669ea449ee7b9aabed9591f0": {
@@ -2076,15 +2792,15 @@
           },
           "nodeID": "669ea449ee7b9aabed9591f0",
           "coords": [
-            1408.2769334242316,
-            -218.18615033471497
+            1804.5269334242316,
+            -211.93615033471497
           ]
         },
         "669ea6cbee7b9aabed95923f": {
           "type": "goToNode",
           "data": {
             "name": "",
-            "nodeID": "669e9861ee7b9aabed9591b1",
+            "nodeID": "669ecf07ee7b9aabed959714",
             "diagramID": "64386e21bb106b044ea34b78",
             "portsV2": {
               "byKey": {},
@@ -2153,34 +2869,27 @@
                     "points": [
                       {
                         "point": [
-                          1124.4,
-                          -791.73
+                          1153.87,
+                          -481.11
                         ]
                       },
                       {
                         "point": [
-                          1148.4,
-                          -791.73
+                          1190,
+                          -481.11
                         ]
                       },
                       {
                         "point": [
-                          1148.4,
-                          -758.45
+                          1190,
+                          -701.2
                         ]
                       },
                       {
                         "point": [
-                          994.87,
-                          -758.45
-                        ]
-                      },
-                      {
-                        "point": [
-                          994.87,
-                          -734.45
+                          1226.12,
+                          -701.2
                         ],
-                        "toTop": true,
                         "allowedToTop": true
                       }
                     ]
@@ -2208,14 +2917,14 @@
             "sets": [
               {
                 "mode": "prompt",
-                "prompt": "Generate a question based on \n{{[cleaned_chunks].669ea8189c4c97f9286f45d9}}. Only use the question not the answer.",
+                "prompt": "Generate one question based on the context from\n{{[cleaned_chunks].669ea8189c4c97f9286f45d9}}. Only use the question not the answer. Output only the question.",
                 "variable": "669ea5379c4c97f9286f444c"
               }
             ],
             "system": "",
             "maxTokens": 128,
             "overrideParams": false,
-            "model": "gpt-3.5-turbo",
+            "model": "gpt-4o",
             "temperature": 0.7,
             "portsV2": {
               "byKey": {},
@@ -2272,7 +2981,35 @@
                   "type": "next",
                   "target": "669ea678ee7b9aabed959225",
                   "id": "669eaabbee7b9aabed959441",
-                  "data": {}
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1557.12,
+                          -588.7
+                        ]
+                      },
+                      {
+                        "point": [
+                          1593.32,
+                          -588.7
+                        ]
+                      },
+                      {
+                        "point": [
+                          1593.32,
+                          -701.1
+                        ]
+                      },
+                      {
+                        "point": [
+                          1629.53,
+                          -701.1
+                        ],
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
                 }
               },
               "dynamic": []
@@ -2318,7 +3055,7 @@
           "type": "goToNode",
           "data": {
             "name": "",
-            "nodeID": "669e9861ee7b9aabed9591b1",
+            "nodeID": "669ecf07ee7b9aabed959714",
             "diagramID": "64386e21bb106b044ea34b78",
             "portsV2": {
               "byKey": {},
@@ -2341,6 +3078,229 @@
             0,
             0
           ]
+        },
+        "669ecf07ee7b9aabed959711": {
+          "type": "buttons",
+          "data": {
+            "name": "Buttons",
+            "buttons": [
+              {
+                "id": "7we2c3hkq",
+                "name": "Choose for me",
+                "actions": []
+              }
+            ],
+            "intentScope": "GLOBAL",
+            "noMatch": {
+              "types": [
+                "path"
+              ],
+              "pathName": "No match",
+              "randomize": false,
+              "reprompts": []
+            },
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "else": {
+                  "id": "669ecf9fee7b9aabed95972d",
+                  "type": "else",
+                  "target": "669ecfdaee7b9aabed95974f",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          726.78,
+                          -270.35
+                        ]
+                      },
+                      {
+                        "point": [
+                          772.2,
+                          -270.35
+                        ]
+                      },
+                      {
+                        "point": [
+                          772.2,
+                          -219.5
+                        ]
+                      },
+                      {
+                        "point": [
+                          817.62,
+                          -219.5
+                        ],
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": [
+                {
+                  "type": "",
+                  "target": "669e9861ee7b9aabed9591b1",
+                  "id": "669ecf07ee7b9aabed959712",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          726.78,
+                          -324.6
+                        ]
+                      },
+                      {
+                        "point": [
+                          774.82,
+                          -324.6
+                        ]
+                      },
+                      {
+                        "point": [
+                          774.82,
+                          -700.95
+                        ]
+                      },
+                      {
+                        "point": [
+                          822.87,
+                          -700.95
+                        ],
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          "nodeID": "669ecf07ee7b9aabed959711",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "669ecf07ee7b9aabed959714": {
+          "type": "block",
+          "data": {
+            "name": "Topic Choice",
+            "steps": [
+              "669ed32eee7b9aabed9598c6",
+              "669ecf07ee7b9aabed959711"
+            ],
+            "color": ""
+          },
+          "nodeID": "669ecf07ee7b9aabed959714",
+          "coords": [
+            560.7769334242319,
+            -483.18615033471497
+          ]
+        },
+        "669ecfdaee7b9aabed95974f": {
+          "type": "setV2",
+          "data": {
+            "name": "",
+            "sets": [
+              {
+                "type": "advance",
+                "variable": "669e98879c4c97f9286f3f27",
+                "label": null,
+                "expression": "{{[last_utterance].last_utterance}} "
+              }
+            ],
+            "title": "",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "669ea790ee7b9aabed959247",
+                  "id": "669ecfdaee7b9aabed959750",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1149.62,
+                          -209.83
+                        ]
+                      },
+                      {
+                        "point": [
+                          1177.87,
+                          -209.83
+                        ]
+                      },
+                      {
+                        "point": [
+                          1177.87,
+                          -588.45
+                        ]
+                      },
+                      {
+                        "point": [
+                          1153.87,
+                          -588.45
+                        ],
+                        "reversed": true,
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "669ecfdaee7b9aabed95974f"
+        },
+        "669ecfdaee7b9aabed959751": {
+          "type": "block",
+          "data": {
+            "name": "Set last utterance to trivia topic",
+            "steps": [
+              "669ecfdaee7b9aabed95974f"
+            ],
+            "color": ""
+          },
+          "nodeID": "669ecfdaee7b9aabed959751",
+          "coords": [
+            983.6215467393854,
+            -298.49803998315247
+          ]
+        },
+        "669ed32eee7b9aabed9598c6": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "3fhxv3hmu",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Do you want to choose a topic or let me choose for you?"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "669ed32eee7b9aabed9598c7"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "669ed32eee7b9aabed9598c6"
         }
       },
       "offsetX": 660.3784532606145,
@@ -2356,9 +3316,9 @@
       ],
       "menuNodeIDs": [],
       "intentStepIDs": [],
-      "_id": "669e97619c4c97f9286f3ea4",
+      "_id": "669ecdb60507e9cca82d1618",
       "diagramID": "64386e21bb106b044ea34b78",
-      "versionID": "669e97619c4c97f9286f3ea2"
+      "versionID": "669ecdb60507e9cca82d1616"
     }
   },
   "flows": [],
@@ -2403,9 +3363,61 @@
       "createdAt": "2024-07-22T17:31:13.000Z",
       "updatedAt": "2024-07-22T17:31:13.000Z",
       "updatedByID": 70616
+    },
+    {
+      "id": "669ece0a0507e9cca82d1667",
+      "name": "Exit game",
+      "createdByID": 70616,
+      "folderID": null,
+      "description": "",
+      "automaticReprompt": false,
+      "entityOrder": [],
+      "automaticRepromptSettings": null,
+      "createdAt": "2024-07-22T21:24:27.000Z",
+      "updatedAt": "2024-07-22T21:24:27.000Z",
+      "updatedByID": 70616
+    },
+    {
+      "id": "669ece490507e9cca82d16ab",
+      "name": "Check Score",
+      "createdByID": 70616,
+      "folderID": null,
+      "description": "",
+      "automaticReprompt": false,
+      "entityOrder": [],
+      "automaticRepromptSettings": null,
+      "createdAt": "2024-07-22T21:25:30.000Z",
+      "updatedAt": "2024-07-22T21:25:30.000Z",
+      "updatedByID": 70616
     }
   ],
   "utterances": [
+    {
+      "id": "669ed41f0507e9cca82d1a3a",
+      "text": [
+        {
+          "text": [
+            "Score"
+          ]
+        }
+      ],
+      "intentID": "669ece490507e9cca82d16ab",
+      "language": "en-us",
+      "createdAt": "2024-07-22T21:50:23.000Z"
+    },
+    {
+      "id": "669ed42d0507e9cca82d1a4f",
+      "text": [
+        {
+          "text": [
+            "Exit"
+          ]
+        }
+      ],
+      "intentID": "669ece0a0507e9cca82d1667",
+      "language": "en-us",
+      "createdAt": "2024-07-22T21:50:38.000Z"
+    },
     {
       "id": "65d72a6aa845250f3bd1b9af",
       "text": [
@@ -2665,6 +3677,188 @@
       "intentID": "6579c778dd3cca0fe0e0b152",
       "language": "en-us",
       "createdAt": "2024-07-22T17:31:13.000Z"
+    },
+    {
+      "id": "669ece0a0507e9cca82d1668",
+      "text": [
+        {
+          "text": [
+            "I want to exit"
+          ]
+        }
+      ],
+      "intentID": "669ece0a0507e9cca82d1667",
+      "language": "en-us",
+      "createdAt": "2024-07-22T21:24:27.000Z"
+    },
+    {
+      "id": "669ece0a0507e9cca82d1669",
+      "text": [
+        {
+          "text": [
+            "Stop playing trivia"
+          ]
+        }
+      ],
+      "intentID": "669ece0a0507e9cca82d1667",
+      "language": "en-us",
+      "createdAt": "2024-07-22T21:24:27.000Z"
+    },
+    {
+      "id": "669ece0a0507e9cca82d166a",
+      "text": [
+        {
+          "text": [
+            "Close the game"
+          ]
+        }
+      ],
+      "intentID": "669ece0a0507e9cca82d1667",
+      "language": "en-us",
+      "createdAt": "2024-07-22T21:24:27.000Z"
+    },
+    {
+      "id": "669ece0a0507e9cca82d166b",
+      "text": [
+        {
+          "text": [
+            "I'm done playing"
+          ]
+        }
+      ],
+      "intentID": "669ece0a0507e9cca82d1667",
+      "language": "en-us",
+      "createdAt": "2024-07-22T21:24:27.000Z"
+    },
+    {
+      "id": "669ece0a0507e9cca82d166c",
+      "text": [
+        {
+          "text": [
+            "End the game"
+          ]
+        }
+      ],
+      "intentID": "669ece0a0507e9cca82d1667",
+      "language": "en-us",
+      "createdAt": "2024-07-22T21:24:27.000Z"
+    },
+    {
+      "id": "669ece0a0507e9cca82d166d",
+      "text": [
+        {
+          "text": [
+            "Leave the game"
+          ]
+        }
+      ],
+      "intentID": "669ece0a0507e9cca82d1667",
+      "language": "en-us",
+      "createdAt": "2024-07-22T21:24:27.000Z"
+    },
+    {
+      "id": "669ece0a0507e9cca82d166e",
+      "text": [
+        {
+          "text": [
+            "Quit the game"
+          ]
+        }
+      ],
+      "intentID": "669ece0a0507e9cca82d1667",
+      "language": "en-us",
+      "createdAt": "2024-07-22T21:24:27.000Z"
+    },
+    {
+      "id": "669ece490507e9cca82d16ac",
+      "text": [
+        {
+          "text": [
+            "I want to check my score"
+          ]
+        }
+      ],
+      "intentID": "669ece490507e9cca82d16ab",
+      "language": "en-us",
+      "createdAt": "2024-07-22T21:25:30.000Z"
+    },
+    {
+      "id": "669ece490507e9cca82d16ad",
+      "text": [
+        {
+          "text": [
+            "Check my score"
+          ]
+        }
+      ],
+      "intentID": "669ece490507e9cca82d16ab",
+      "language": "en-us",
+      "createdAt": "2024-07-22T21:25:30.000Z"
+    },
+    {
+      "id": "669ece490507e9cca82d16ae",
+      "text": [
+        {
+          "text": [
+            "Give me an update on my score"
+          ]
+        }
+      ],
+      "intentID": "669ece490507e9cca82d16ab",
+      "language": "en-us",
+      "createdAt": "2024-07-22T21:25:30.000Z"
+    },
+    {
+      "id": "669ece490507e9cca82d16af",
+      "text": [
+        {
+          "text": [
+            "What's my current score?"
+          ]
+        }
+      ],
+      "intentID": "669ece490507e9cca82d16ab",
+      "language": "en-us",
+      "createdAt": "2024-07-22T21:25:30.000Z"
+    },
+    {
+      "id": "669ece490507e9cca82d16b0",
+      "text": [
+        {
+          "text": [
+            "I need to know my score"
+          ]
+        }
+      ],
+      "intentID": "669ece490507e9cca82d16ab",
+      "language": "en-us",
+      "createdAt": "2024-07-22T21:25:30.000Z"
+    },
+    {
+      "id": "669ece490507e9cca82d16b1",
+      "text": [
+        {
+          "text": [
+            "Can you check my score?"
+          ]
+        }
+      ],
+      "intentID": "669ece490507e9cca82d16ab",
+      "language": "en-us",
+      "createdAt": "2024-07-22T21:25:30.000Z"
+    },
+    {
+      "id": "669ece490507e9cca82d16b2",
+      "text": [
+        {
+          "text": [
+            "What is my score?"
+          ]
+        }
+      ],
+      "intentID": "669ece490507e9cca82d16ab",
+      "language": "en-us",
+      "createdAt": "2024-07-22T21:25:30.000Z"
     }
   ],
   "requiredEntities": [],
@@ -2912,7 +4106,7 @@
       "description": "",
       "defaultValue": "",
       "createdAt": "2024-07-22T18:43:04.000Z",
-      "updatedAt": "2024-07-22T18:43:04.000Z",
+      "updatedAt": "2024-07-22T21:36:38.000Z",
       "updatedByID": 70616
     }
   ],
@@ -2928,7 +4122,35 @@
       "assigneeID": null,
       "description": null,
       "createdAt": "2024-07-22T17:31:13.000Z",
-      "updatedAt": "2024-07-22T20:18:00.000Z",
+      "updatedAt": "2024-07-22T21:50:04.000Z",
+      "updatedByID": 70616
+    },
+    {
+      "id": "669ecdf20507e9cca82d1650",
+      "name": "Exit game",
+      "createdByID": 70616,
+      "folderID": null,
+      "status": null,
+      "isStart": false,
+      "diagramID": "669ecdf2f3621d8d9d9ef1c8",
+      "assigneeID": 70616,
+      "description": "",
+      "createdAt": "2024-07-22T21:24:03.000Z",
+      "updatedAt": "2024-07-22T21:24:55.000Z",
+      "updatedByID": 70616
+    },
+    {
+      "id": "669ece310507e9cca82d1694",
+      "name": "Check score",
+      "createdByID": 70616,
+      "folderID": null,
+      "status": null,
+      "isStart": false,
+      "diagramID": "669ece31f3621d8d9d9ef1c9",
+      "assigneeID": 70616,
+      "description": "",
+      "createdAt": "2024-07-22T21:25:06.000Z",
+      "updatedAt": "2024-07-22T21:28:11.000Z",
       "updatedByID": 70616
     }
   ],
@@ -2948,7 +4170,7 @@
         "65a81f712f5982dcf3cc7052"
       ],
       "createdAt": "2024-07-22T18:40:42.000Z",
-      "updatedAt": "2024-07-22T18:52:17.000Z",
+      "updatedAt": "2024-07-22T21:42:16.000Z",
       "updatedByID": 70616
     }
   ],
@@ -2996,17 +4218,15 @@
   ],
   "project": {
     "type": "chat",
-    "name": "04_08",
+    "name": "04_10",
     "image": "",
     "teamID": "6an4Q11LEb",
     "members": [],
-    "privacy": "private",
     "platform": "webchat",
     "_version": 1.2,
     "linkType": "STRAIGHT",
     "creatorID": 70616,
     "updatedBy": 70616,
-    "apiPrivacy": "private",
     "platformData": {
       "invocationName": "template project general"
     },
@@ -3014,8 +4234,8 @@
     "aiAssistSettings": {
       "aiPlayground": true
     },
-    "_id": "669e97619c4c97f9286f3ea1",
-    "updatedAt": "2024-07-22T20:06:46.896Z",
+    "_id": "669ecdb60507e9cca82d1615",
+    "updatedAt": "2024-07-22T21:23:14.541Z",
     "knowledgeBase": {
       "settings": {
         "summarization": {
@@ -3039,9 +4259,812 @@
           "size": 1024
         }
       },
-      "documents": {}
+      "tags": {},
+      "faqSets": {},
+      "documents": {
+        "669ed120d4a64fdf57d44c90": {
+          "status": {
+            "type": "SUCCESS"
+          },
+          "data": {
+            "type": "text",
+            "name": "Qionghai-Cangzhou.txt",
+            "canEdit": false
+          },
+          "updatedAt": "2024-07-22T21:37:36.659Z",
+          "creatorID": 70616,
+          "documentID": "669ed120d4a64fdf57d44c90",
+          "tags": [],
+          "s3ObjectRef": "669ecdb60507e9cca82d1615/Qionghai-Cangzhou.txt",
+          "version": 0
+        },
+        "669ed121ca378904d3950410": {
+          "status": {
+            "type": "SUCCESS"
+          },
+          "data": {
+            "type": "text",
+            "name": "2017 NHL Expansion Draft-2017â18 Pittsburgh Penguins season.txt",
+            "canEdit": false
+          },
+          "updatedAt": "2024-07-22T21:37:37.439Z",
+          "creatorID": 70616,
+          "documentID": "669ed121ca378904d3950410",
+          "tags": [],
+          "s3ObjectRef": "669ecdb60507e9cca82d1615/2017 NHL Expansion Draft-2017â18 Pittsburgh Penguins season.txt",
+          "version": 0
+        },
+        "669ed121ca378904d3950411": {
+          "status": {
+            "type": "SUCCESS"
+          },
+          "data": {
+            "type": "text",
+            "name": "Steve Yzerman-2006â07 Detroit Red Wings season.txt",
+            "canEdit": false
+          },
+          "updatedAt": "2024-07-22T21:37:37.926Z",
+          "creatorID": 70616,
+          "documentID": "669ed121ca378904d3950411",
+          "tags": [],
+          "s3ObjectRef": "669ecdb60507e9cca82d1615/Steve Yzerman-2006â07 Detroit Red Wings season.txt",
+          "version": 0
+        },
+        "669ed122ca378904d3950412": {
+          "status": {
+            "type": "SUCCESS"
+          },
+          "data": {
+            "type": "text",
+            "name": "Crichton Castle-Crichton Collegiate Church.txt",
+            "canEdit": false
+          },
+          "updatedAt": "2024-07-22T21:37:38.539Z",
+          "creatorID": 70616,
+          "documentID": "669ed122ca378904d3950412",
+          "tags": [],
+          "s3ObjectRef": "669ecdb60507e9cca82d1615/Crichton Castle-Crichton Collegiate Church.txt",
+          "version": 0
+        },
+        "669ed123ca378904d3950413": {
+          "status": {
+            "type": "SUCCESS"
+          },
+          "data": {
+            "type": "text",
+            "name": "Ealhswith-Ãthelweard (son of Alfred).txt",
+            "canEdit": false
+          },
+          "updatedAt": "2024-07-22T21:37:39.241Z",
+          "creatorID": 70616,
+          "documentID": "669ed123ca378904d3950413",
+          "tags": [],
+          "s3ObjectRef": "669ecdb60507e9cca82d1615/Ealhswith-Ãthelweard (son of Alfred).txt",
+          "version": 0
+        },
+        "669ed123d4a64fdf57d44c91": {
+          "status": {
+            "type": "SUCCESS"
+          },
+          "data": {
+            "type": "text",
+            "name": "Newark Airport Interchange-Newark Liberty International Airport.txt",
+            "canEdit": false
+          },
+          "updatedAt": "2024-07-22T21:37:39.756Z",
+          "creatorID": 70616,
+          "documentID": "669ed123d4a64fdf57d44c91",
+          "tags": [],
+          "s3ObjectRef": "669ecdb60507e9cca82d1615/Newark Airport Interchange-Newark Liberty International Airport.txt",
+          "version": 0
+        },
+        "669ed124d4a64fdf57d44c92": {
+          "status": {
+            "type": "SUCCESS"
+          },
+          "data": {
+            "type": "text",
+            "name": "2005â06 FC Bayern Munich season-Claudio Pizarro.txt",
+            "canEdit": false
+          },
+          "updatedAt": "2024-07-22T21:37:40.331Z",
+          "creatorID": 70616,
+          "documentID": "669ed124d4a64fdf57d44c92",
+          "tags": [],
+          "s3ObjectRef": "669ecdb60507e9cca82d1615/2005â06 FC Bayern Munich season-Claudio Pizarro.txt",
+          "version": 0
+        },
+        "669ed124d4a64fdf57d44c93": {
+          "status": {
+            "type": "SUCCESS"
+          },
+          "data": {
+            "type": "text",
+            "name": "William R. Fairchild International Airport-Chico Municipal Airport.txt",
+            "canEdit": false
+          },
+          "updatedAt": "2024-07-22T21:37:40.772Z",
+          "creatorID": 70616,
+          "documentID": "669ed124d4a64fdf57d44c93",
+          "tags": [],
+          "s3ObjectRef": "669ecdb60507e9cca82d1615/William R. Fairchild International Airport-Chico Municipal Airport.txt",
+          "version": 0
+        },
+        "669ed125d4a64fdf57d44c94": {
+          "status": {
+            "type": "SUCCESS"
+          },
+          "data": {
+            "type": "text",
+            "name": "Fort Pownall-Stockton Springs, Maine.txt",
+            "canEdit": false
+          },
+          "updatedAt": "2024-07-22T21:37:41.345Z",
+          "creatorID": 70616,
+          "documentID": "669ed125d4a64fdf57d44c94",
+          "tags": [],
+          "s3ObjectRef": "669ecdb60507e9cca82d1615/Fort Pownall-Stockton Springs, Maine.txt",
+          "version": 0
+        },
+        "669ed125ca378904d3950414": {
+          "status": {
+            "type": "SUCCESS"
+          },
+          "data": {
+            "type": "text",
+            "name": "Gene (band)-The Afghan Whigs.txt",
+            "canEdit": false
+          },
+          "updatedAt": "2024-07-22T21:37:41.913Z",
+          "creatorID": 70616,
+          "documentID": "669ed125ca378904d3950414",
+          "tags": [],
+          "s3ObjectRef": "669ecdb60507e9cca82d1615/Gene (band)-The Afghan Whigs.txt",
+          "version": 0
+        },
+        "669ed126d4a64fdf57d44c95": {
+          "status": {
+            "type": "SUCCESS"
+          },
+          "data": {
+            "type": "text",
+            "name": "Curse of the Faceless Man-Mount Vesuvius.txt",
+            "canEdit": false
+          },
+          "updatedAt": "2024-07-22T21:37:42.301Z",
+          "creatorID": 70616,
+          "documentID": "669ed126d4a64fdf57d44c95",
+          "tags": [],
+          "s3ObjectRef": "669ecdb60507e9cca82d1615/Curse of the Faceless Man-Mount Vesuvius.txt",
+          "version": 0
+        },
+        "669ed127ca378904d3950415": {
+          "status": {
+            "type": "SUCCESS"
+          },
+          "data": {
+            "type": "text",
+            "name": "72nd Field Artillery Brigade (United States)-First United States Army.txt",
+            "canEdit": false
+          },
+          "updatedAt": "2024-07-22T21:37:43.405Z",
+          "creatorID": 70616,
+          "documentID": "669ed127ca378904d3950415",
+          "tags": [],
+          "s3ObjectRef": "669ecdb60507e9cca82d1615/72nd Field Artillery Brigade (United States)-First United States Army.txt",
+          "version": 0
+        },
+        "669ed127d4a64fdf57d44c96": {
+          "status": {
+            "type": "SUCCESS"
+          },
+          "data": {
+            "type": "text",
+            "name": "StanisÅaw Kiszka-Hetmans of the PolishâLithuanian Commonwealth.txt",
+            "canEdit": false
+          },
+          "updatedAt": "2024-07-22T21:37:43.783Z",
+          "creatorID": 70616,
+          "documentID": "669ed127d4a64fdf57d44c96",
+          "tags": [],
+          "s3ObjectRef": "669ecdb60507e9cca82d1615/StanisÅaw Kiszka-Hetmans of the PolishâLithuanian Commonwealth.txt",
+          "version": 0
+        },
+        "669ed128d4a64fdf57d44c97": {
+          "status": {
+            "type": "SUCCESS"
+          },
+          "data": {
+            "type": "text",
+            "name": "Del Lord-Wang Xiaoshuai.txt",
+            "canEdit": false
+          },
+          "updatedAt": "2024-07-22T21:37:44.203Z",
+          "creatorID": 70616,
+          "documentID": "669ed128d4a64fdf57d44c97",
+          "tags": [],
+          "s3ObjectRef": "669ecdb60507e9cca82d1615/Del Lord-Wang Xiaoshuai.txt",
+          "version": 0
+        },
+        "669ed128a4cba2a6293c785c": {
+          "status": {
+            "type": "SUCCESS"
+          },
+          "data": {
+            "type": "text",
+            "name": "Jonathan Aitken-Lord North Street.txt",
+            "canEdit": false
+          },
+          "updatedAt": "2024-07-22T21:37:44.717Z",
+          "creatorID": 70616,
+          "documentID": "669ed128a4cba2a6293c785c",
+          "tags": [],
+          "s3ObjectRef": "669ecdb60507e9cca82d1615/Jonathan Aitken-Lord North Street.txt",
+          "version": 0
+        },
+        "669ed129a4cba2a6293c785d": {
+          "status": {
+            "type": "SUCCESS"
+          },
+          "data": {
+            "type": "text",
+            "name": "Marche-Pollenza.txt",
+            "canEdit": false
+          },
+          "updatedAt": "2024-07-22T21:37:45.791Z",
+          "creatorID": 70616,
+          "documentID": "669ed129a4cba2a6293c785d",
+          "tags": [],
+          "s3ObjectRef": "669ecdb60507e9cca82d1615/Marche-Pollenza.txt",
+          "version": 0
+        },
+        "669ed12aa4cba2a6293c785e": {
+          "status": {
+            "type": "SUCCESS"
+          },
+          "data": {
+            "type": "text",
+            "name": "William Hughes Miller-Kosciusko, Mississippi.txt",
+            "canEdit": false
+          },
+          "updatedAt": "2024-07-22T21:37:46.282Z",
+          "creatorID": 70616,
+          "documentID": "669ed12aa4cba2a6293c785e",
+          "tags": [],
+          "s3ObjectRef": "669ecdb60507e9cca82d1615/William Hughes Miller-Kosciusko, Mississippi.txt",
+          "version": 0
+        },
+        "669ed12ad4a64fdf57d44c98": {
+          "status": {
+            "type": "SUCCESS"
+          },
+          "data": {
+            "type": "text",
+            "name": "Gallatin School of Individualized Study-Meleko Mokgosi.txt",
+            "canEdit": false
+          },
+          "updatedAt": "2024-07-22T21:37:46.902Z",
+          "creatorID": 70616,
+          "documentID": "669ed12ad4a64fdf57d44c98",
+          "tags": [],
+          "s3ObjectRef": "669ecdb60507e9cca82d1615/Gallatin School of Individualized Study-Meleko Mokgosi.txt",
+          "version": 0
+        },
+        "669ed12bd4a64fdf57d44c99": {
+          "status": {
+            "type": "SUCCESS"
+          },
+          "data": {
+            "type": "text",
+            "name": "Robert Irvine-Restaurant: Impossible.txt",
+            "canEdit": false
+          },
+          "updatedAt": "2024-07-22T21:37:47.414Z",
+          "creatorID": 70616,
+          "documentID": "669ed12bd4a64fdf57d44c99",
+          "tags": [],
+          "s3ObjectRef": "669ecdb60507e9cca82d1615/Robert Irvine-Restaurant: Impossible.txt",
+          "version": 0
+        },
+        "669ed12ba4cba2a6293c785f": {
+          "status": {
+            "type": "SUCCESS"
+          },
+          "data": {
+            "type": "text",
+            "name": "Proposition Joe-Robert F. Chew.txt",
+            "canEdit": false
+          },
+          "updatedAt": "2024-07-22T21:37:47.837Z",
+          "creatorID": 70616,
+          "documentID": "669ed12ba4cba2a6293c785f",
+          "tags": [],
+          "s3ObjectRef": "669ecdb60507e9cca82d1615/Proposition Joe-Robert F. Chew.txt",
+          "version": 0
+        },
+        "669ed12ca4cba2a6293c7860": {
+          "status": {
+            "type": "SUCCESS"
+          },
+          "data": {
+            "type": "text",
+            "name": "Toby Sawyer-Wilmslow.txt",
+            "canEdit": false
+          },
+          "updatedAt": "2024-07-22T21:37:48.239Z",
+          "creatorID": 70616,
+          "documentID": "669ed12ca4cba2a6293c7860",
+          "tags": [],
+          "s3ObjectRef": "669ecdb60507e9cca82d1615/Toby Sawyer-Wilmslow.txt",
+          "version": 0
+        },
+        "669ed12cd4a64fdf57d44c9a": {
+          "status": {
+            "type": "SUCCESS"
+          },
+          "data": {
+            "type": "text",
+            "name": "Tony Kaye (director)-Deepa Mehta.txt",
+            "canEdit": false
+          },
+          "updatedAt": "2024-07-22T21:37:48.653Z",
+          "creatorID": 70616,
+          "documentID": "669ed12cd4a64fdf57d44c9a",
+          "tags": [],
+          "s3ObjectRef": "669ecdb60507e9cca82d1615/Tony Kaye (director)-Deepa Mehta.txt",
+          "version": 0
+        },
+        "669ed12dd4a64fdf57d44c9b": {
+          "status": {
+            "type": "SUCCESS"
+          },
+          "data": {
+            "type": "text",
+            "name": "Boise Towne Square-The Bon MarchÃ©.txt",
+            "canEdit": false
+          },
+          "updatedAt": "2024-07-22T21:37:49.040Z",
+          "creatorID": 70616,
+          "documentID": "669ed12dd4a64fdf57d44c9b",
+          "tags": [],
+          "s3ObjectRef": "669ecdb60507e9cca82d1615/Boise Towne Square-The Bon MarchÃ©.txt",
+          "version": 0
+        },
+        "669ed12dd4a64fdf57d44c9c": {
+          "status": {
+            "type": "SUCCESS"
+          },
+          "data": {
+            "type": "text",
+            "name": "Lizzette Reynolds-Christine Comer.txt",
+            "canEdit": false
+          },
+          "updatedAt": "2024-07-22T21:37:49.564Z",
+          "creatorID": 70616,
+          "documentID": "669ed12dd4a64fdf57d44c9c",
+          "tags": [],
+          "s3ObjectRef": "669ecdb60507e9cca82d1615/Lizzette Reynolds-Christine Comer.txt",
+          "version": 0
+        },
+        "669ed12da4cba2a6293c7861": {
+          "status": {
+            "type": "SUCCESS"
+          },
+          "data": {
+            "type": "text",
+            "name": "P. T. Barnum-William S. Hutchings.txt",
+            "canEdit": false
+          },
+          "updatedAt": "2024-07-22T21:37:49.978Z",
+          "creatorID": 70616,
+          "documentID": "669ed12da4cba2a6293c7861",
+          "tags": [],
+          "s3ObjectRef": "669ecdb60507e9cca82d1615/P. T. Barnum-William S. Hutchings.txt",
+          "version": 0
+        },
+        "669ed12ed4a64fdf57d44c9d": {
+          "status": {
+            "type": "SUCCESS"
+          },
+          "data": {
+            "type": "text",
+            "name": "Battle of the Ch'ongch'on River-Meuse-Argonne Offensive.txt",
+            "canEdit": false
+          },
+          "updatedAt": "2024-07-22T21:37:50.379Z",
+          "creatorID": 70616,
+          "documentID": "669ed12ed4a64fdf57d44c9d",
+          "tags": [],
+          "s3ObjectRef": "669ecdb60507e9cca82d1615/Battle of the Ch'ongch'on River-Meuse-Argonne Offensive.txt",
+          "version": 0
+        },
+        "669ed12ed4a64fdf57d44c9e": {
+          "status": {
+            "type": "SUCCESS"
+          },
+          "data": {
+            "type": "text",
+            "name": "Australian cricket team in England in 1981-Ian Botham.txt",
+            "canEdit": false
+          },
+          "updatedAt": "2024-07-22T21:37:50.748Z",
+          "creatorID": 70616,
+          "documentID": "669ed12ed4a64fdf57d44c9e",
+          "tags": [],
+          "s3ObjectRef": "669ecdb60507e9cca82d1615/Australian cricket team in England in 1981-Ian Botham.txt",
+          "version": 0
+        },
+        "669ed12fd4a64fdf57d44c9f": {
+          "status": {
+            "type": "SUCCESS"
+          },
+          "data": {
+            "type": "text",
+            "name": "1982 NC State Wolfpack football team-Monte Kiffin.txt",
+            "canEdit": false
+          },
+          "updatedAt": "2024-07-22T21:37:51.416Z",
+          "creatorID": 70616,
+          "documentID": "669ed12fd4a64fdf57d44c9f",
+          "tags": [],
+          "s3ObjectRef": "669ecdb60507e9cca82d1615/1982 NC State Wolfpack football team-Monte Kiffin.txt",
+          "version": 0
+        },
+        "669ed12fa4cba2a6293c7862": {
+          "status": {
+            "type": "SUCCESS"
+          },
+          "data": {
+            "type": "text",
+            "name": "Ewan McGregor-Come What May (2001 song).txt",
+            "canEdit": false
+          },
+          "updatedAt": "2024-07-22T21:37:51.815Z",
+          "creatorID": 70616,
+          "documentID": "669ed12fa4cba2a6293c7862",
+          "tags": [],
+          "s3ObjectRef": "669ecdb60507e9cca82d1615/Ewan McGregor-Come What May (2001 song).txt",
+          "version": 0
+        },
+        "669ed130a4cba2a6293c7863": {
+          "status": {
+            "type": "SUCCESS"
+          },
+          "data": {
+            "type": "text",
+            "name": "Ivan Bella-Frank De Winne.txt",
+            "canEdit": false
+          },
+          "updatedAt": "2024-07-22T21:37:52.216Z",
+          "creatorID": 70616,
+          "documentID": "669ed130a4cba2a6293c7863",
+          "tags": [],
+          "s3ObjectRef": "669ecdb60507e9cca82d1615/Ivan Bella-Frank De Winne.txt",
+          "version": 0
+        },
+        "669ed130d4a64fdf57d44ca0": {
+          "status": {
+            "type": "SUCCESS"
+          },
+          "data": {
+            "type": "text",
+            "name": "Wild Honey (play)-Platonov (play).txt",
+            "canEdit": false
+          },
+          "updatedAt": "2024-07-22T21:37:52.623Z",
+          "creatorID": 70616,
+          "documentID": "669ed130d4a64fdf57d44ca0",
+          "tags": [],
+          "s3ObjectRef": "669ecdb60507e9cca82d1615/Wild Honey (play)-Platonov (play).txt",
+          "version": 0
+        },
+        "669ed131d4a64fdf57d44ca1": {
+          "status": {
+            "type": "SUCCESS"
+          },
+          "data": {
+            "type": "text",
+            "name": "Pago Pago International Airport-Roswell International Air Center.txt",
+            "canEdit": false
+          },
+          "updatedAt": "2024-07-22T21:37:53.016Z",
+          "creatorID": 70616,
+          "documentID": "669ed131d4a64fdf57d44ca1",
+          "tags": [],
+          "s3ObjectRef": "669ecdb60507e9cca82d1615/Pago Pago International Airport-Roswell International Air Center.txt",
+          "version": 0
+        },
+        "669ed131d4a64fdf57d44ca2": {
+          "status": {
+            "type": "SUCCESS"
+          },
+          "data": {
+            "type": "text",
+            "name": "Untold: The Greatest Sports Stories Never Told-Marv Albert.txt",
+            "canEdit": false
+          },
+          "updatedAt": "2024-07-22T21:37:53.395Z",
+          "creatorID": 70616,
+          "documentID": "669ed131d4a64fdf57d44ca2",
+          "tags": [],
+          "s3ObjectRef": "669ecdb60507e9cca82d1615/Untold: The Greatest Sports Stories Never Told-Marv Albert.txt",
+          "version": 0
+        },
+        "669ed131d4a64fdf57d44ca3": {
+          "status": {
+            "type": "SUCCESS"
+          },
+          "data": {
+            "type": "text",
+            "name": "Walt Disney (film)-Sacro GRA.txt",
+            "canEdit": false
+          },
+          "updatedAt": "2024-07-22T21:37:53.818Z",
+          "creatorID": 70616,
+          "documentID": "669ed131d4a64fdf57d44ca3",
+          "tags": [],
+          "s3ObjectRef": "669ecdb60507e9cca82d1615/Walt Disney (film)-Sacro GRA.txt",
+          "version": 0
+        },
+        "669ed132d4a64fdf57d44ca4": {
+          "status": {
+            "type": "SUCCESS"
+          },
+          "data": {
+            "type": "text",
+            "name": "Gaza Strip-Status of territories occupied by Israel in 1967.txt",
+            "canEdit": false
+          },
+          "updatedAt": "2024-07-22T21:37:54.218Z",
+          "creatorID": 70616,
+          "documentID": "669ed132d4a64fdf57d44ca4",
+          "tags": [],
+          "s3ObjectRef": "669ecdb60507e9cca82d1615/Gaza Strip-Status of territories occupied by Israel in 1967.txt",
+          "version": 0
+        },
+        "669ed132d4a64fdf57d44ca5": {
+          "status": {
+            "type": "SUCCESS"
+          },
+          "data": {
+            "type": "text",
+            "name": "2015 MTV Video Music Awards-Wildest Dreams (Taylor Swift song).txt",
+            "canEdit": false
+          },
+          "updatedAt": "2024-07-22T21:37:54.636Z",
+          "creatorID": 70616,
+          "documentID": "669ed132d4a64fdf57d44ca5",
+          "tags": [],
+          "s3ObjectRef": "669ecdb60507e9cca82d1615/2015 MTV Video Music Awards-Wildest Dreams (Taylor Swift song).txt",
+          "version": 0
+        },
+        "669ed133a4cba2a6293c7864": {
+          "status": {
+            "type": "SUCCESS"
+          },
+          "data": {
+            "type": "text",
+            "name": "Gunnera manicata-Apera.txt",
+            "canEdit": false
+          },
+          "updatedAt": "2024-07-22T21:37:55.133Z",
+          "creatorID": 70616,
+          "documentID": "669ed133a4cba2a6293c7864",
+          "tags": [],
+          "s3ObjectRef": "669ecdb60507e9cca82d1615/Gunnera manicata-Apera.txt",
+          "version": 0
+        },
+        "669ed133d4a64fdf57d44ca6": {
+          "status": {
+            "type": "SUCCESS"
+          },
+          "data": {
+            "type": "text",
+            "name": "Pussy Galore (band)-The Drums.txt",
+            "canEdit": false
+          },
+          "updatedAt": "2024-07-22T21:37:55.571Z",
+          "creatorID": 70616,
+          "documentID": "669ed133d4a64fdf57d44ca6",
+          "tags": [],
+          "s3ObjectRef": "669ecdb60507e9cca82d1615/Pussy Galore (band)-The Drums.txt",
+          "version": 0
+        },
+        "669ed134a4cba2a6293c7866": {
+          "status": {
+            "type": "SUCCESS"
+          },
+          "data": {
+            "type": "text",
+            "name": "Banded Brothers-University of Exeter.txt",
+            "canEdit": false
+          },
+          "updatedAt": "2024-07-22T21:37:56.042Z",
+          "creatorID": 70616,
+          "documentID": "669ed134a4cba2a6293c7866",
+          "tags": [],
+          "s3ObjectRef": "669ecdb60507e9cca82d1615/Banded Brothers-University of Exeter.txt",
+          "version": 0
+        },
+        "669ed134d4a64fdf57d44ca7": {
+          "status": {
+            "type": "SUCCESS"
+          },
+          "data": {
+            "type": "text",
+            "name": "Len Wiseman-Benjamin Christensen.txt",
+            "canEdit": false
+          },
+          "updatedAt": "2024-07-22T21:37:56.540Z",
+          "creatorID": 70616,
+          "documentID": "669ed134d4a64fdf57d44ca7",
+          "tags": [],
+          "s3ObjectRef": "669ecdb60507e9cca82d1615/Len Wiseman-Benjamin Christensen.txt",
+          "version": 0
+        },
+        "669ed134d4a64fdf57d44ca8": {
+          "status": {
+            "type": "SUCCESS"
+          },
+          "data": {
+            "type": "text",
+            "name": "Bill Melendez-Steven C. Melendez.txt",
+            "canEdit": false
+          },
+          "updatedAt": "2024-07-22T21:37:56.971Z",
+          "creatorID": 70616,
+          "documentID": "669ed134d4a64fdf57d44ca8",
+          "tags": [],
+          "s3ObjectRef": "669ecdb60507e9cca82d1615/Bill Melendez-Steven C. Melendez.txt",
+          "version": 0
+        },
+        "669ed135a4cba2a6293c7867": {
+          "status": {
+            "type": "SUCCESS"
+          },
+          "data": {
+            "type": "text",
+            "name": "Shark Creek, New South Wales-Clarence River (New South Wales).txt",
+            "canEdit": false
+          },
+          "updatedAt": "2024-07-22T21:37:57.426Z",
+          "creatorID": 70616,
+          "documentID": "669ed135a4cba2a6293c7867",
+          "tags": [],
+          "s3ObjectRef": "669ecdb60507e9cca82d1615/Shark Creek, New South Wales-Clarence River (New South Wales).txt",
+          "version": 0
+        },
+        "669ed135a4cba2a6293c7868": {
+          "status": {
+            "type": "SUCCESS"
+          },
+          "data": {
+            "type": "text",
+            "name": "Finding Dory-Hayden Rolence.txt",
+            "canEdit": false
+          },
+          "updatedAt": "2024-07-22T21:37:57.881Z",
+          "creatorID": 70616,
+          "documentID": "669ed135a4cba2a6293c7868",
+          "tags": [],
+          "s3ObjectRef": "669ecdb60507e9cca82d1615/Finding Dory-Hayden Rolence.txt",
+          "version": 0
+        },
+        "669ed136d4a64fdf57d44ca9": {
+          "status": {
+            "type": "SUCCESS"
+          },
+          "data": {
+            "type": "text",
+            "name": "1995 Monaco Grand Prix-Benetton Formula.txt",
+            "canEdit": false
+          },
+          "updatedAt": "2024-07-22T21:37:58.308Z",
+          "creatorID": 70616,
+          "documentID": "669ed136d4a64fdf57d44ca9",
+          "tags": [],
+          "s3ObjectRef": "669ecdb60507e9cca82d1615/1995 Monaco Grand Prix-Benetton Formula.txt",
+          "version": 0
+        },
+        "669ed136d4a64fdf57d44caa": {
+          "status": {
+            "type": "SUCCESS"
+          },
+          "data": {
+            "type": "text",
+            "name": "Frederick Law Olmsted-Cadwalader Heights, Trenton, New Jersey.txt",
+            "canEdit": false
+          },
+          "updatedAt": "2024-07-22T21:37:58.773Z",
+          "creatorID": 70616,
+          "documentID": "669ed136d4a64fdf57d44caa",
+          "tags": [],
+          "s3ObjectRef": "669ecdb60507e9cca82d1615/Frederick Law Olmsted-Cadwalader Heights, Trenton, New Jersey.txt",
+          "version": 0
+        },
+        "669ed137a4cba2a6293c7869": {
+          "status": {
+            "type": "SUCCESS"
+          },
+          "data": {
+            "type": "text",
+            "name": "Franco Zeffirelli-Gordon Warnecke.txt",
+            "canEdit": false
+          },
+          "updatedAt": "2024-07-22T21:37:59.184Z",
+          "creatorID": 70616,
+          "documentID": "669ed137a4cba2a6293c7869",
+          "tags": [],
+          "s3ObjectRef": "669ecdb60507e9cca82d1615/Franco Zeffirelli-Gordon Warnecke.txt",
+          "version": 0
+        },
+        "669ed137a4cba2a6293c786a": {
+          "status": {
+            "type": "SUCCESS"
+          },
+          "data": {
+            "type": "text",
+            "name": "AndrÃ© Zucca-Signal (magazine).txt",
+            "canEdit": false
+          },
+          "updatedAt": "2024-07-22T21:37:59.668Z",
+          "creatorID": 70616,
+          "documentID": "669ed137a4cba2a6293c786a",
+          "tags": [],
+          "s3ObjectRef": "669ecdb60507e9cca82d1615/AndrÃ© Zucca-Signal (magazine).txt",
+          "version": 0
+        },
+        "669ed138a4cba2a6293c786b": {
+          "status": {
+            "type": "SUCCESS"
+          },
+          "data": {
+            "type": "text",
+            "name": "Bill Woodfull-Bill Ponsford.txt",
+            "canEdit": false
+          },
+          "updatedAt": "2024-07-22T21:38:00.063Z",
+          "creatorID": 70616,
+          "documentID": "669ed138a4cba2a6293c786b",
+          "tags": [],
+          "s3ObjectRef": "669ecdb60507e9cca82d1615/Bill Woodfull-Bill Ponsford.txt",
+          "version": 0
+        },
+        "669ed138d4a64fdf57d44cab": {
+          "status": {
+            "type": "SUCCESS"
+          },
+          "data": {
+            "type": "text",
+            "name": "Sasha Alexander-Yes Man (film).txt",
+            "canEdit": false
+          },
+          "updatedAt": "2024-07-22T21:38:00.508Z",
+          "creatorID": 70616,
+          "documentID": "669ed138d4a64fdf57d44cab",
+          "tags": [],
+          "s3ObjectRef": "669ecdb60507e9cca82d1615/Sasha Alexander-Yes Man (film).txt",
+          "version": 0
+        },
+        "669ed138d9729ebb053bc583": {
+          "status": {
+            "type": "SUCCESS"
+          },
+          "data": {
+            "type": "text",
+            "name": "Election Law Journal-Reed College.txt",
+            "canEdit": false
+          },
+          "updatedAt": "2024-07-22T21:38:00.964Z",
+          "creatorID": 70616,
+          "documentID": "669ed138d9729ebb053bc583",
+          "tags": [],
+          "s3ObjectRef": "669ecdb60507e9cca82d1615/Election Law Journal-Reed College.txt",
+          "version": 0
+        }
+      }
     },
-    "devVersion": "669e97619c4c97f9286f3ea2"
+    "devVersion": "669ecdb60507e9cca82d1616"
   },
   "_version": "1.2",
   "variableStates": []
