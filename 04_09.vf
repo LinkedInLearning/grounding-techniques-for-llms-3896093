@@ -177,7 +177,7 @@
     "prototype": {
       "type": "chat",
       "data": {
-        "name": "04_08",
+        "name": "04_09",
         "locales": [
           "en-US"
         ]
@@ -305,7 +305,7 @@
           },
           "VFAPIKEY": {
             "isSystem": false,
-            "defaultValue": "VF.DM.669e9c111091ccc3ed5c1c53.CJYcCKCx8nhHUqI4",
+            "defaultValue": "",
             "datatype": "any",
             "isArray": false
           }
@@ -2996,7 +2996,7 @@
   ],
   "project": {
     "type": "chat",
-    "name": "04_08",
+    "name": "04_09",
     "image": "",
     "teamID": "6an4Q11LEb",
     "members": [],
